@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace Aero_Formularios
 {
-    public partial class Mapa_de_Mexico : Form
+    public partial class Inicio_sesion : Form
     {
-        public Mapa_de_Mexico()
+        public Inicio_sesion()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
