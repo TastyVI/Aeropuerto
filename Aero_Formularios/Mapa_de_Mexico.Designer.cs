@@ -38,6 +38,7 @@
             PbAeropuertoCancun = new PictureBox();
             PBAeropuertoMerida = new PictureBox();
             FlwContenedorControles = new FlowLayoutPanel();
+            PbAeropuertoGuadalajara = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)PbMapaDeMexico).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PVAeropuertoPuebla).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PBAeropuertoCDMX).BeginInit();
@@ -47,6 +48,7 @@
             ((System.ComponentModel.ISupportInitialize)PBAeropuertoChihuahua).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PbAeropuertoCancun).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PBAeropuertoMerida).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PbAeropuertoGuadalajara).BeginInit();
             SuspendLayout();
             // 
             // PbMapaDeMexico
@@ -109,7 +111,7 @@
             PBAeropuertoChihuahua.BackColor = Color.Red;
             PBAeropuertoChihuahua.Location = new Point(329, 154);
             PBAeropuertoChihuahua.Name = "PBAeropuertoChihuahua";
-            PBAeropuertoChihuahua.Size = new Size(10, 16);
+            PBAeropuertoChihuahua.Size = new Size(15, 14);
             PBAeropuertoChihuahua.TabIndex = 6;
             PBAeropuertoChihuahua.TabStop = false;
             // 
@@ -138,11 +140,21 @@
             FlwContenedorControles.Size = new Size(318, 574);
             FlwContenedorControles.TabIndex = 9;
             // 
+            // PbAeropuertoGuadalajara
+            // 
+            PbAeropuertoGuadalajara.BackColor = Color.Red;
+            PbAeropuertoGuadalajara.Location = new Point(410, 387);
+            PbAeropuertoGuadalajara.Name = "PbAeropuertoGuadalajara";
+            PbAeropuertoGuadalajara.Size = new Size(14, 16);
+            PbAeropuertoGuadalajara.TabIndex = 10;
+            PbAeropuertoGuadalajara.TabStop = false;
+            // 
             // Mapa_de_Mexico
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1251, 598);
+            Controls.Add(PbAeropuertoGuadalajara);
             Controls.Add(FlwContenedorControles);
             Controls.Add(PBAeropuertoMerida);
             Controls.Add(PbAeropuertoCancun);
@@ -164,6 +176,7 @@
             ((System.ComponentModel.ISupportInitialize)PBAeropuertoChihuahua).EndInit();
             ((System.ComponentModel.ISupportInitialize)PbAeropuertoCancun).EndInit();
             ((System.ComponentModel.ISupportInitialize)PBAeropuertoMerida).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PbAeropuertoGuadalajara).EndInit();
             ResumeLayout(false);
         }
 
@@ -179,5 +192,6 @@
         private PictureBox PbAeropuertoCancun;
         private PictureBox PBAeropuertoMerida;
         private FlowLayoutPanel FlwContenedorControles;
+        private PictureBox PbAeropuertoGuadalajara;
     }
 }
