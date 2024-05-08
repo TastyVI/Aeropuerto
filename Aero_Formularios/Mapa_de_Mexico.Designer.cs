@@ -28,43 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
+            PbMapaDeMexico = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)PbMapaDeMexico).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // PbMapaDeMexico
             // 
-            button1.Location = new Point(77, 91);
-            button1.Name = "button1";
-            button1.Size = new Size(143, 214);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(453, 78);
-            button2.Name = "button2";
-            button2.Size = new Size(162, 297);
-            button2.TabIndex = 1;
-            button2.Text = "movimientto naranja";
-            button2.UseVisualStyleBackColor = true;
+            PbMapaDeMexico.Image = Properties.Resources.MAPA_DE_MEXICO;
+            PbMapaDeMexico.Location = new Point(2, -1);
+            PbMapaDeMexico.Name = "PbMapaDeMexico";
+            PbMapaDeMexico.Size = new Size(872, 573);
+            PbMapaDeMexico.SizeMode = PictureBoxSizeMode.StretchImage;
+            PbMapaDeMexico.TabIndex = 0;
+            PbMapaDeMexico.TabStop = false;
             // 
             // Mapa_de_Mexico
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            ClientSize = new Size(1173, 592);
+            Controls.Add(PbMapaDeMexico);
             Name = "Mapa_de_Mexico";
             Text = "Mapa_de_Mexico";
+            ((System.ComponentModel.ISupportInitialize)PbMapaDeMexico).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
+        private PictureBox PbMapaDeMexico;
     }
 }
