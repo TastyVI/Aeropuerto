@@ -135,6 +135,7 @@
             // 
             // FlwContenedorControles
             // 
+            FlwContenedorControles.BorderStyle = BorderStyle.FixedSingle;
             FlwContenedorControles.Location = new Point(921, 12);
             FlwContenedorControles.Name = "FlwContenedorControles";
             FlwContenedorControles.Size = new Size(318, 574);

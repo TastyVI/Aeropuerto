@@ -5,6 +5,10 @@
         public UserControl1()
         {
             InitializeComponent();
+
+
+
+
         }
     }
 }
