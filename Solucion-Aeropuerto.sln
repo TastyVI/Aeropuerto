@@ -5,9 +5,9 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aero_Formularios", "Aero_Formularios\Aero_Formularios.csproj", "{C574B98A-07F6-4956-8A37-98DFDC1ED2B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca_de_Clases", "Biblioteca_de_Clases\Biblioteca_de_Clases.csproj", "{D08FA51A-8A10-481C-87D3-5A88B1FBD2A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biblioteca_de_Clases", "Biblioteca_de_Clases\Biblioteca_de_Clases.csproj", "{D08FA51A-8A10-481C-87D3-5A88B1FBD2A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca_de_Controles", "Biblioteca_de_Controles\Biblioteca_de_Controles.csproj", "{959AC977-9886-41A5-BE05-0516B7590564}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biblioteca_de_Controles", "Biblioteca_de_Controles\Biblioteca_de_Controles.csproj", "{959AC977-9886-41A5-BE05-0516B7590564}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
