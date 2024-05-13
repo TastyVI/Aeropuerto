@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Aero_Formularios
 {
-    public partial class frmUsuarios : Form
+    public partial class FRM_Usuarios : Form
     {
-        public frmUsuarios()
+        public FRM_Usuarios()
         {
             InitializeComponent();
         }

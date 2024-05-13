@@ -2,14 +2,14 @@ using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
 namespace Aero_Formularios
 {
-    public partial class Menu : Form
+    public partial class FRM_Menu : Form
     {
         //campos privados de los botones
         private IconButton currentBtn;
         private Panel panelIzquierdo;
         private Form FormularioHijo;
 
-        public Menu()
+        public FRM_Menu()
         {
             InitializeComponent();
             panelIzquierdo = new Panel();

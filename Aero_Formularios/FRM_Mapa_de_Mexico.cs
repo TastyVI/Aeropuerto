@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Aero_Formularios
 {
-    public partial class Mapa_de_Mexico : Form
+    public partial class FRM_Mapa_de_Mexico : Form
     {
-        public Mapa_de_Mexico()
+        public FRM_Mapa_de_Mexico()
         {
             InitializeComponent();
         }

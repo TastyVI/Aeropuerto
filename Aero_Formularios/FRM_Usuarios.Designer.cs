@@ -1,6 +1,6 @@
 ﻿namespace Aero_Formularios
 {
-    partial class frmUsuarios
+    partial class FRM_Usuarios
     {
         /// <summary>
         /// Required designer variable.

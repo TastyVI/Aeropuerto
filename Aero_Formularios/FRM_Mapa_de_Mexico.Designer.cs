@@ -1,6 +1,6 @@
 ﻿namespace Aero_Formularios
 {
-    partial class Mapa_de_Mexico
+    partial class FRM_Mapa_de_Mexico
     {
         /// <summary>
         /// Required designer variable.
