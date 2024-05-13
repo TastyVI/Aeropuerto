@@ -54,7 +54,7 @@
             panelMenu.Dock = DockStyle.Left;
             panelMenu.Location = new Point(0, 0);
             panelMenu.Name = "panelMenu";
-            panelMenu.Size = new Size(190, 562);
+            panelMenu.Size = new Size(190, 545);
             panelMenu.TabIndex = 0;
             // 
             // iconButton2
@@ -128,7 +128,7 @@
             BarraTitulo.Dock = DockStyle.Top;
             BarraTitulo.Location = new Point(190, 0);
             BarraTitulo.Name = "BarraTitulo";
-            BarraTitulo.Size = new Size(597, 55);
+            BarraTitulo.Size = new Size(1004, 55);
             BarraTitulo.TabIndex = 1;
             BarraTitulo.MouseDown += BarraTitulo_MouseDown;
             // 
@@ -157,22 +157,27 @@
             // 
             // panelFormularios
             // 
+            panelFormularios.AutoSize = true;
+            panelFormularios.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panelFormularios.BackColor = Color.FromArgb(96, 125, 139);
             panelFormularios.Dock = DockStyle.Fill;
             panelFormularios.Location = new Point(190, 55);
+            panelFormularios.MaximumSize = new Size(1003, 487);
+            panelFormularios.MinimumSize = new Size(1003, 487);
             panelFormularios.Name = "panelFormularios";
-            panelFormularios.Size = new Size(597, 507);
+            panelFormularios.Size = new Size(1003, 487);
             panelFormularios.TabIndex = 2;
             // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(787, 562);
+            ClientSize = new Size(1194, 545);
             Controls.Add(panelFormularios);
             Controls.Add(BarraTitulo);
             Controls.Add(panelMenu);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MinimumSize = new Size(1210, 584);
             Name = "Menu";
             Text = "Form1";
             panelMenu.ResumeLayout(false);
@@ -182,6 +187,7 @@
             BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconoFormularioHijo).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

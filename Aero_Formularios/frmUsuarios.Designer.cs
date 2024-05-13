@@ -1,6 +1,6 @@
 ﻿namespace Aero_Formularios
 {
-    partial class frmAvion
+    partial class frmUsuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -28,43 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            panel1 = new Panel();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // button1
+            // flowLayoutPanel1
             // 
-            button1.Location = new Point(92, 196);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            flowLayoutPanel1.Dock = DockStyle.Fill;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(800, 450);
+            flowLayoutPanel1.TabIndex = 0;
             // 
-            // button2
+            // panel1
             // 
-            button2.Location = new Point(291, 212);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            panel1.Controls.Add(flowLayoutPanel1);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(800, 450);
+            panel1.TabIndex = 1;
             // 
-            // frmAvion
+            // frmUsuarios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(629, 308);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Name = "frmAvion";
-            Text = "frmAvion";
+            ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
+            Name = "frmUsuarios";
+            Text = "frmUsuarios";
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Panel panel1;
     }
 }
