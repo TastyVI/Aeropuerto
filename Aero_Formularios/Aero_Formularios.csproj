@@ -15,6 +15,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Biblioteca_de_Clases\Biblioteca_de_Clases.csproj" />
+    <ProjectReference Include="..\Biblioteca_de_Controles\Biblioteca_de_Controles.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
