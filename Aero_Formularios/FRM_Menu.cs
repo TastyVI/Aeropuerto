@@ -92,13 +92,13 @@ namespace Aero_Formularios
         private void iconButton1_Click(object sender, EventArgs e)
         {
             activarBoton(sender, RGBColores.color5);
-            AbrirFormularioHijo(new Mapa_de_Mexico());
+            AbrirFormularioHijo(new FRM_Mapa_de_Mexico());
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
             activarBoton(sender, RGBColores.color4);
-            AbrirFormularioHijo(new frmUsuarios());
+            AbrirFormularioHijo(new FRM_Usuarios());
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
