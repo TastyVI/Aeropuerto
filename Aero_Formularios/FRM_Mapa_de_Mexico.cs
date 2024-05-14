@@ -19,11 +19,18 @@ namespace Aero_Formularios
         Contenedor contenedor;
         Lista_Coordenadas Lista_Coordenadas;
 
+        PictureBox PB_Avion;
+        
+
         public FRM_Mapa_de_Mexico()
         {
             InitializeComponent();
+
             Lista_Coordenadas = new Lista_Coordenadas();
             contenedor = Lista_Coordenadas.getLista();
+
+            PB_Avion = new PictureBox();
+
         }
 
         /*######################### Delegados y sus metodos #############################

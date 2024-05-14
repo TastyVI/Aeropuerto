@@ -124,4 +124,22 @@
   <data name="avion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\avion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Airbus A320" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Airbus A320.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Boeing 737" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boeing 737.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Boeing 777" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boeing 777.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Boeing 787 Dreamliner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boeing 787 Dreamliner.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bombardier CRJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bombardier CRJ.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Embraer E-Jet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Embraer E-Jet.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
