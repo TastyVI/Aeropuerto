@@ -28,43 +28,137 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
+            txtNombre = new TextBox();
+            button1 = new Button();
+            label2 = new Label();
+            txtContrasena = new TextBox();
+            label3 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            panel1 = new Panel();
-            panel1.SuspendLayout();
+            button2 = new Button();
+            txtUsuario = new TextBox();
+            chbTipo = new CheckBox();
             SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(76, 64);
+            label1.Name = "label1";
+            label1.Size = new Size(64, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Nombre";
+            // 
+            // txtNombre
+            // 
+            txtNombre.Location = new Point(164, 64);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(125, 27);
+            txtNombre.TabIndex = 1;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(88, 313);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 2;
+            button1.Text = "Guardar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(76, 129);
+            label2.Name = "label2";
+            label2.Size = new Size(59, 20);
+            label2.TabIndex = 3;
+            label2.Text = "Usuario";
+            // 
+            // txtContrasena
+            // 
+            txtContrasena.Location = new Point(164, 199);
+            txtContrasena.Name = "txtContrasena";
+            txtContrasena.PasswordChar = '*';
+            txtContrasena.Size = new Size(125, 27);
+            txtContrasena.TabIndex = 6;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(76, 199);
+            label3.Name = "label3";
+            label3.Size = new Size(83, 20);
+            label3.TabIndex = 5;
+            label3.Text = "Contraseña";
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Dock = DockStyle.Fill;
-            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Location = new Point(396, 66);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(800, 450);
-            flowLayoutPanel1.TabIndex = 0;
+            flowLayoutPanel1.Size = new Size(480, 331);
+            flowLayoutPanel1.TabIndex = 7;
             // 
-            // panel1
+            // button2
             // 
-            panel1.Controls.Add(flowLayoutPanel1);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(800, 450);
-            panel1.TabIndex = 1;
+            button2.Location = new Point(195, 313);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 8;
+            button2.Text = "Actualizar";
+            button2.UseVisualStyleBackColor = true;
             // 
-            // frmUsuarios
+            // txtUsuario
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            txtUsuario.Location = new Point(161, 138);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(125, 27);
+            txtUsuario.TabIndex = 9;
+            // 
+            // chbTipo
+            // 
+            chbTipo.AutoSize = true;
+            chbTipo.Location = new Point(98, 254);
+            chbTipo.Name = "chbTipo";
+            chbTipo.Size = new Size(126, 24);
+            chbTipo.TabIndex = 10;
+            chbTipo.Text = "Administrador";
+            chbTipo.UseVisualStyleBackColor = true;
+            // 
+            // FRM_Usuarios
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(panel1);
-            Name = "frmUsuarios";
+            ClientSize = new Size(914, 600);
+            Controls.Add(chbTipo);
+            Controls.Add(txtUsuario);
+            Controls.Add(button2);
+            Controls.Add(flowLayoutPanel1);
+            Controls.Add(txtContrasena);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(button1);
+            Controls.Add(txtNombre);
+            Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "FRM_Usuarios";
             Text = "frmUsuarios";
-            panel1.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
+        private Label label1;
+        private TextBox txtNombre;
+        private Button button1;
+        private TextBox Usuario;
+        private Label label2;
+        private TextBox txtContrasena;
+        private Label label3;
         private FlowLayoutPanel flowLayoutPanel1;
-        private Panel panel1;
+        private Button button2;
+        private TextBox txtUsuario;
+        private CheckBox chbTipo;
     }
 }

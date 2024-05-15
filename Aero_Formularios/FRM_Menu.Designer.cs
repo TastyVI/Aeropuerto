@@ -47,8 +47,9 @@
             panelMenu.Controls.Add(panelLogo);
             panelMenu.Dock = DockStyle.Left;
             panelMenu.Location = new Point(0, 0);
+            panelMenu.Margin = new Padding(3, 4, 3, 4);
             panelMenu.Name = "panelMenu";
-            panelMenu.Size = new Size(190, 545);
+            panelMenu.Size = new Size(217, 727);
             panelMenu.TabIndex = 0;
             // 
             // panelLogo
@@ -56,17 +57,19 @@
             panelLogo.Controls.Add(btnInicio);
             panelLogo.Dock = DockStyle.Top;
             panelLogo.Location = new Point(0, 0);
+            panelLogo.Margin = new Padding(3, 4, 3, 4);
             panelLogo.Name = "panelLogo";
             panelLogo.RightToLeft = RightToLeft.Yes;
-            panelLogo.Size = new Size(190, 138);
+            panelLogo.Size = new Size(217, 184);
             panelLogo.TabIndex = 0;
             // 
             // btnInicio
             // 
             btnInicio.Image = (Image)resources.GetObject("btnInicio.Image");
-            btnInicio.Location = new Point(-6, 0);
+            btnInicio.Location = new Point(-7, 0);
+            btnInicio.Margin = new Padding(3, 4, 3, 4);
             btnInicio.Name = "btnInicio";
-            btnInicio.Size = new Size(196, 138);
+            btnInicio.Size = new Size(224, 184);
             btnInicio.SizeMode = PictureBoxSizeMode.StretchImage;
             btnInicio.TabIndex = 0;
             btnInicio.TabStop = false;
@@ -77,9 +80,10 @@
             BarraTitulo.BackColor = Color.FromArgb(0, 51, 102);
             BarraTitulo.Controls.Add(lblTituloFormularioHijo);
             BarraTitulo.Dock = DockStyle.Top;
-            BarraTitulo.Location = new Point(190, 0);
+            BarraTitulo.Location = new Point(217, 0);
+            BarraTitulo.Margin = new Padding(3, 4, 3, 4);
             BarraTitulo.Name = "BarraTitulo";
-            BarraTitulo.Size = new Size(1004, 55);
+            BarraTitulo.Size = new Size(1148, 73);
             BarraTitulo.TabIndex = 1;
             BarraTitulo.MouseDown += BarraTitulo_MouseDown;
             // 
@@ -87,9 +91,9 @@
             // 
             lblTituloFormularioHijo.AutoSize = true;
             lblTituloFormularioHijo.ForeColor = Color.DarkGray;
-            lblTituloFormularioHijo.Location = new Point(68, 19);
+            lblTituloFormularioHijo.Location = new Point(78, 25);
             lblTituloFormularioHijo.Name = "lblTituloFormularioHijo";
-            lblTituloFormularioHijo.Size = new Size(36, 15);
+            lblTituloFormularioHijo.Size = new Size(45, 20);
             lblTituloFormularioHijo.TabIndex = 1;
             lblTituloFormularioHijo.Text = "Inicio";
             // 
@@ -99,23 +103,25 @@
             panelFormularios.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panelFormularios.BackColor = Color.FromArgb(96, 125, 139);
             panelFormularios.Dock = DockStyle.Fill;
-            panelFormularios.Location = new Point(190, 55);
-            panelFormularios.MaximumSize = new Size(1003, 487);
-            panelFormularios.MinimumSize = new Size(1003, 487);
+            panelFormularios.Location = new Point(217, 73);
+            panelFormularios.Margin = new Padding(3, 4, 3, 4);
+            panelFormularios.MaximumSize = new Size(1146, 649);
+            panelFormularios.MinimumSize = new Size(1146, 649);
             panelFormularios.Name = "panelFormularios";
-            panelFormularios.Size = new Size(1003, 487);
+            panelFormularios.Size = new Size(1146, 649);
             panelFormularios.TabIndex = 2;
             // 
             // FRM_Menu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1194, 545);
+            ClientSize = new Size(1365, 727);
             Controls.Add(panelFormularios);
             Controls.Add(BarraTitulo);
             Controls.Add(panelMenu);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            MinimumSize = new Size(1210, 584);
+            Margin = new Padding(3, 4, 3, 4);
+            MinimumSize = new Size(1380, 763);
             Name = "FRM_Menu";
             Text = "Form1";
             panelMenu.ResumeLayout(false);
