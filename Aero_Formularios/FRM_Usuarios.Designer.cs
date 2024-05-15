@@ -34,10 +34,11 @@
             label2 = new Label();
             txtContrasena = new TextBox();
             label3 = new Label();
-            flowLayoutPanel1 = new FlowLayoutPanel();
             button2 = new Button();
             txtUsuario = new TextBox();
             chbTipo = new CheckBox();
+            dgvDatos = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvDatos).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -92,13 +93,6 @@
             label3.TabIndex = 5;
             label3.Text = "Contraseña";
             // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.Location = new Point(396, 66);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(480, 331);
-            flowLayoutPanel1.TabIndex = 7;
-            // 
             // button2
             // 
             button2.Location = new Point(195, 313);
@@ -107,6 +101,7 @@
             button2.TabIndex = 8;
             button2.Text = "Actualizar";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // txtUsuario
             // 
@@ -125,15 +120,25 @@
             chbTipo.Text = "Administrador";
             chbTipo.UseVisualStyleBackColor = true;
             // 
+            // dgvDatos
+            // 
+            dgvDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvDatos.Location = new Point(338, 31);
+            dgvDatos.Name = "dgvDatos";
+            dgvDatos.RowHeadersWidth = 51;
+            dgvDatos.Size = new Size(571, 448);
+            dgvDatos.TabIndex = 11;
+            dgvDatos.CellContentClick += dgvDatos_CellContentClick;
+            // 
             // FRM_Usuarios
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+            Controls.Add(dgvDatos);
             Controls.Add(chbTipo);
             Controls.Add(txtUsuario);
             Controls.Add(button2);
-            Controls.Add(flowLayoutPanel1);
             Controls.Add(txtContrasena);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -143,6 +148,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "FRM_Usuarios";
             Text = "frmUsuarios";
+            ((System.ComponentModel.ISupportInitialize)dgvDatos).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -156,9 +162,9 @@
         private Label label2;
         private TextBox txtContrasena;
         private Label label3;
-        private FlowLayoutPanel flowLayoutPanel1;
         private Button button2;
         private TextBox txtUsuario;
         private CheckBox chbTipo;
+        private DataGridView dgvDatos;
     }
 }

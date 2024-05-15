@@ -21,8 +21,8 @@ namespace Biblioteca_de_Clases
         public string? N_Usuario { get; set; }
         [BsonElement("Contrasena")]
         public string? Contrasena { get; set; }
-        [BsonElement("Tipo")]
-        public  string? Tipo { get; set; }
+        [BsonElement("Administrador")]
+        public  bool? Administrador { get; set; }
 
     }
 }
