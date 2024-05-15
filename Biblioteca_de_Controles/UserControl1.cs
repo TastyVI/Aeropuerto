@@ -10,11 +10,11 @@ namespace Biblioteca_de_Controles
         public void asignacion()
         {
             DatosDelVuelo datos = new DatosDelVuelo();
-            LblAeropuertoAterrizaje.Text = datos.AeropuertoDestino;
-            LblAeropuertoDespegue.Text = datos.AeropuertoSalida;
-            LblModeloAvion.Text = datos.ModeloAvion;
-            LblNombreCapitan.Text = datos.NombreCapitan;
-            LblNumerodePasajeros.Text = datos.PasajerosAbordo.ToString();
+            //LblAeropuertoAterrizaje.Text = datos.AeropuertoDestino;
+            //LblAeropuertoDespegue.Text = datos.AeropuertoSalida;
+            //LblModeloAvion.Text = datos.ModeloAvion;
+            //LblNombreCapitan.Text = datos.NombreCapitan;
+            //LblNumerodePasajeros.Text = datos.PasajerosAbordo.ToString();
         }
     }
 }
