@@ -13,9 +13,9 @@ namespace Biblioteca_de_Clases
         [BsonElement("Capitan")]
         public string? Capitan { get; set; }
         [BsonElement("Modelo")]
-        public int Modelo { get; set; }
+        public string? Modelo { get; set; }
         [BsonElement("Pasajeros")]
-        public string? Pasajeros { get; set; }
+        public int Pasajeros { get; set; }
         [BsonElement("Salida")]
         public string? AeropuertoSalida { get; set; }
         [BsonElement("Destino")]
