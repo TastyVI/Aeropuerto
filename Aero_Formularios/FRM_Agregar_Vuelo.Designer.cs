@@ -37,8 +37,10 @@
             label2 = new Label();
             CmbModeloAvion = new ComboBox();
             BtnAgregar = new Button();
+            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PBVisualizacion).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -51,7 +53,7 @@
             // 
             // PBVisualizacion
             // 
-            PBVisualizacion.Location = new Point(34, 16);
+            PBVisualizacion.Location = new Point(19, 16);
             PBVisualizacion.Name = "PBVisualizacion";
             PBVisualizacion.Size = new Size(329, 285);
             PBVisualizacion.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -63,7 +65,7 @@
             label1.BackColor = SystemColors.ActiveCaption;
             label1.FlatStyle = FlatStyle.Popup;
             label1.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(83, 224);
+            label1.Location = new Point(285, 230);
             label1.Name = "label1";
             label1.Size = new Size(199, 57);
             label1.TabIndex = 1;
@@ -77,7 +79,7 @@
             CmbAeropuertoSalida.FormattingEnabled = true;
             CmbAeropuertoSalida.ImeMode = ImeMode.Katakana;
             CmbAeropuertoSalida.Items.AddRange(new object[] { "Tijuana", "Chihuahua", "Monterrey", "Puebla", "Ciudad de Mexico", "Acapulco", "Cancún", "Merida" });
-            CmbAeropuertoSalida.Location = new Point(184, 293);
+            CmbAeropuertoSalida.Location = new Point(365, 305);
             CmbAeropuertoSalida.Name = "CmbAeropuertoSalida";
             CmbAeropuertoSalida.Size = new Size(211, 36);
             CmbAeropuertoSalida.TabIndex = 4;
@@ -88,7 +90,7 @@
             label3.AutoSize = true;
             label3.BackColor = SystemColors.ActiveCaption;
             label3.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(283, 346);
+            label3.Location = new Point(399, 354);
             label3.Name = "label3";
             label3.Size = new Size(246, 46);
             label3.TabIndex = 5;
@@ -101,7 +103,7 @@
             CmbAeropuertoDestino.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             CmbAeropuertoDestino.FormattingEnabled = true;
             CmbAeropuertoDestino.Items.AddRange(new object[] { "Tijuana", "Chihuahua", "Monterrey", "Puebla", "Ciudad de Mexico", "Acapulco", "Cancún", "Merida" });
-            CmbAeropuertoDestino.Location = new Point(410, 405);
+            CmbAeropuertoDestino.Location = new Point(531, 412);
             CmbAeropuertoDestino.Name = "CmbAeropuertoDestino";
             CmbAeropuertoDestino.Size = new Size(224, 36);
             CmbAeropuertoDestino.TabIndex = 6;
@@ -112,7 +114,7 @@
             label2.BackColor = SystemColors.ActiveCaption;
             label2.FlatStyle = FlatStyle.Popup;
             label2.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(12, 111);
+            label2.Location = new Point(89, 112);
             label2.Name = "label2";
             label2.Size = new Size(438, 45);
             label2.TabIndex = 7;
@@ -126,7 +128,7 @@
             CmbModeloAvion.FormattingEnabled = true;
             CmbModeloAvion.ImeMode = ImeMode.Katakana;
             CmbModeloAvion.Items.AddRange(new object[] { "Boeing 737", "Airbus A320", "Embraer E-jet", "Bombardier CRJ", "Boeing 787", "Boeing 777" });
-            CmbModeloAvion.Location = new Point(12, 175);
+            CmbModeloAvion.Location = new Point(285, 172);
             CmbModeloAvion.Name = "CmbModeloAvion";
             CmbModeloAvion.Size = new Size(224, 36);
             CmbModeloAvion.TabIndex = 8;
@@ -146,11 +148,26 @@
             BtnAgregar.UseVisualStyleBackColor = false;
             BtnAgregar.Click += button1_Click;
             // 
+            // iconPictureBox1
+            // 
+            iconPictureBox1.BackColor = SystemColors.Control;
+            iconPictureBox1.ForeColor = SystemColors.ControlText;
+            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconPictureBox1.IconColor = SystemColors.ControlText;
+            iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox1.IconSize = 119;
+            iconPictureBox1.Location = new Point(23, 210);
+            iconPictureBox1.Name = "iconPictureBox1";
+            iconPictureBox1.Size = new Size(119, 131);
+            iconPictureBox1.TabIndex = 10;
+            iconPictureBox1.TabStop = false;
+            // 
             // FRM_Agregar_Vuelo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(990, 521);
+            Controls.Add(iconPictureBox1);
             Controls.Add(BtnAgregar);
             Controls.Add(CmbModeloAvion);
             Controls.Add(label2);
@@ -163,6 +180,7 @@
             Text = "FRM";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)PBVisualizacion).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -178,5 +196,6 @@
         private Label label2;
         private ComboBox CmbModeloAvion;
         private Button BtnAgregar;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }
