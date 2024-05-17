@@ -10,21 +10,60 @@ using System.Windows.Forms;
 
 namespace Aero_Formularios
 {
-    public partial class Inicio_sesion : Form
+    public partial class FRM_Inicio_Sesion : Form
     {
-        public Inicio_sesion()
+        public FRM_Inicio_Sesion()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void txtUsuario_Enter(object sender, EventArgs e)
         {
-
+            if (txtUsuario.Text == "USUARIO")
+            {
+                txtUsuario.Text = "";
+                txtUsuario.ForeColor = Color.LightGray;
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void txtUsuario_Leave(object sender, EventArgs e)
         {
-            this.Close();
+            if (txtUsuario.Text == "")
+            {
+                txtUsuario.Text = "USUARIO";
+                txtUsuario.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void txtContraseña_Enter(object sender, EventArgs e)
+        {
+            if (txtContraseña.Text == "CONTRASEÑA")
+            {
+                txtContraseña.Text = "";
+                txtContraseña.ForeColor = Color.LightGray;
+                txtContraseña.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txtContraseña_Leave(object sender, EventArgs e)
+        {
+            if (txtContraseña.Text == "")
+            {
+                txtContraseña.Text = "CONTRASEÑA";
+                txtContraseña.ForeColor = Color.DarkGray;
+                txtContraseña.UseSystemPasswordChar = false;
+
+            }
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

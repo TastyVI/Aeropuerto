@@ -118,28 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MAPA_DE_MEXICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MAPA_DE_MEXICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="avion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\avion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Airbus A320" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Airbus A320.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Boeing 737" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Boeing 737.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Boeing 777" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Boeing 777.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Boeing 787 Dreamliner" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Boeing 787 Dreamliner.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Bombardier CRJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bombardier CRJ.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Boeing 737" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boeing 737.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MAPA_DE_MEXICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MAPA_DE_MEXICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Embraer E-Jet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Embraer E-Jet.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Boeing 777" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boeing 777.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoAvion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoAvion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bombardier CRJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bombardier CRJ.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Airbus A320" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Airbus A320.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimisar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
