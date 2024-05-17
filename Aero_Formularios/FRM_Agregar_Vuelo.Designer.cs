@@ -61,6 +61,7 @@
             // 
             // PBVisualizacion
             // 
+            PBVisualizacion.BorderStyle = BorderStyle.FixedSingle;
             PBVisualizacion.Location = new Point(3, 16);
             PBVisualizacion.Name = "PBVisualizacion";
             PBVisualizacion.Size = new Size(360, 188);
@@ -141,7 +142,6 @@
             CmbModeloAvion.Size = new Size(224, 36);
             CmbModeloAvion.TabIndex = 8;
             CmbModeloAvion.Text = "Modelo";
-            CmbModeloAvion.Click += CmbModeloAvion_Click;
             // 
             // BtnAgregar
             // 
@@ -182,7 +182,7 @@
             lblNombrePiloto.BorderStyle = BorderStyle.Fixed3D;
             lblNombrePiloto.FlatStyle = FlatStyle.System;
             lblNombrePiloto.Font = new Font("PT Bold Mirror", 12F, FontStyle.Regular, GraphicsUnit.Point, 178);
-            lblNombrePiloto.Location = new Point(188, 137);
+            lblNombrePiloto.Location = new Point(163, 147);
             lblNombrePiloto.Name = "lblNombrePiloto";
             lblNombrePiloto.Size = new Size(63, 40);
             lblNombrePiloto.TabIndex = 11;
@@ -190,6 +190,7 @@
             // 
             // pbPiloto
             // 
+            pbPiloto.BorderStyle = BorderStyle.FixedSingle;
             pbPiloto.Location = new Point(2, 89);
             pbPiloto.Name = "pbPiloto";
             pbPiloto.Size = new Size(150, 127);
@@ -227,6 +228,10 @@
             txtPasajeros.Name = "txtPasajeros";
             txtPasajeros.Size = new Size(163, 34);
             txtPasajeros.TabIndex = 16;
+            // 
+            // Cronometro
+            // 
+            Cronometro.Tick += Cronometro_Tick;
             // 
             // FRM_Agregar_Vuelo
             // 

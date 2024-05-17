@@ -34,27 +34,48 @@ namespace Aero_Formularios
             db = cliente.GetDatabase("Aereopuerto");
             Vuelos_datos = db.GetCollection<DatosDelVuelo>("Vuelos");
             AsignacionCapitan();
-            MostrarModelo();
-
+            Cronometro.Start();
         }
 
+        //este es el metodo que guardara los datos del vuelo
+        //esta listo para dos tipos de errores del poner mismo delugar de salida y destino y no elegir modelo de avión
         private void button1_Click(object sender, EventArgs e)
         {
-            DatosDelVuelo Datos = new DatosDelVuelo();
-            Datos.Capitan = lblNombrePiloto.Text;
-            Datos.Modelo = CmbModeloAvion.Text;
-            Datos.Pasajeros = Convert.ToInt32(txtPasajeros.Text);
-            Datos.AeropuertoSalida = CmbAeropuertoSalida.Text;
-            Datos.AeropuertoDestino = CmbAeropuertoDestino.Text;
-            Vuelos_datos.InsertOne(Datos);
-
-
-
+            try
+            {
+                if (CmbModeloAvion.Text == "Modelo")
+                {
+                    MessageBox.Show("No hay selección de modelo  del avión");
+                }
+                else
+                {
+                    if (CmbAeropuertoSalida.Text != CmbAeropuertoDestino.Text)
+                    {
+                        DatosDelVuelo Datos = new DatosDelVuelo();
+                        txtPasajeros.Text.ToLower();
+                        txtPasajeros.Text.Replace("a,b,c,d,e,f,g,h,i,j,k,l,m,n,ñ,o,p,q,r,s,t,u,v,w,x,y,z,°," +
+                            "!,;,#,$,%,&,/,(,=,),?,¡,¿,+,*,-,@","");
+                        Datos.Capitan = lblNombrePiloto.Text;
+                        Datos.Modelo = CmbModeloAvion.Text;
+                        Datos.Pasajeros = Convert.ToInt32(txtPasajeros.Text);
+                        Datos.AeropuertoSalida = CmbAeropuertoSalida.Text;
+                        Datos.AeropuertoDestino = CmbAeropuertoDestino.Text;
+                        Vuelos_datos.InsertOne(Datos);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No puedes agregar un vuelo al mismo sitio donde te encuentras ");
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                    throw;
+            }
 
         }
 
         public void AsignacionCapitan()
-
         {
             int numero;
             Random rand = new Random();
@@ -111,12 +132,11 @@ namespace Aero_Formularios
                         "Aero_Formularios\\Resources\\Capitanes\\CAP WILSON  ZALAZAR.jpg");
                     lblNombrePiloto.Text = "Wilson Zalazar";
                     break;
-
             }
         }
-        public void MostrarModelo()
+        
+        private void Cronometro_Tick(object sender, EventArgs e)
         {
-            Cronometro.Start();
             string MODELO = CmbModeloAvion.Text;
             switch (MODELO)
             {
@@ -146,12 +166,6 @@ namespace Aero_Formularios
                     break;
 
             }
-        }
-
-        private void CmbModeloAvion_Click(object sender, EventArgs e)
-        {
-
-
         }
     }
 }
