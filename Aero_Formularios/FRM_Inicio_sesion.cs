@@ -70,5 +70,10 @@ namespace Aero_Formularios
         {
 
         }
+
+        private void btnAcceder_Click(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }

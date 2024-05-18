@@ -50,16 +50,18 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(200, 330);
+            panel1.Size = new Size(229, 440);
             panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.LogoAvion;
-            pictureBox1.Location = new Point(12, 81);
+            pictureBox1.Location = new Point(14, 108);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(177, 153);
+            pictureBox1.Size = new Size(202, 204);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -68,18 +70,20 @@
             // 
             panel2.BackColor = Color.Silver;
             panel2.Enabled = false;
-            panel2.Location = new Point(223, 127);
+            panel2.Location = new Point(255, 169);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(496, 1);
+            panel2.Size = new Size(567, 1);
             panel2.TabIndex = 1;
             // 
             // panel3
             // 
             panel3.BackColor = Color.Silver;
             panel3.Enabled = false;
-            panel3.Location = new Point(223, 193);
+            panel3.Location = new Point(255, 257);
+            panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(496, 1);
+            panel3.Size = new Size(567, 1);
             panel3.TabIndex = 2;
             // 
             // txtUsuario
@@ -88,9 +92,10 @@
             txtUsuario.BorderStyle = BorderStyle.None;
             txtUsuario.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtUsuario.ForeColor = Color.DarkGray;
-            txtUsuario.Location = new Point(223, 101);
+            txtUsuario.Location = new Point(255, 135);
+            txtUsuario.Margin = new Padding(3, 4, 3, 4);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(494, 20);
+            txtUsuario.Size = new Size(565, 25);
             txtUsuario.TabIndex = 3;
             txtUsuario.Text = "USUARIO";
             txtUsuario.Enter += txtUsuario_Enter;
@@ -102,9 +107,10 @@
             txtContraseña.BorderStyle = BorderStyle.None;
             txtContraseña.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtContraseña.ForeColor = Color.DarkGray;
-            txtContraseña.Location = new Point(223, 167);
+            txtContraseña.Location = new Point(255, 223);
+            txtContraseña.Margin = new Padding(3, 4, 3, 4);
             txtContraseña.Name = "txtContraseña";
-            txtContraseña.Size = new Size(494, 20);
+            txtContraseña.Size = new Size(565, 25);
             txtContraseña.TabIndex = 4;
             txtContraseña.Text = "CONTRASEÑA";
             txtContraseña.Enter += txtContraseña_Enter;
@@ -115,9 +121,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DarkGray;
-            label1.Location = new Point(365, 18);
+            label1.Location = new Point(417, 24);
             label1.Name = "label1";
-            label1.Size = new Size(185, 24);
+            label1.Size = new Size(235, 33);
             label1.TabIndex = 5;
             label1.Text = "INICIO DE SESIÓN";
             // 
@@ -130,21 +136,24 @@
             btnAcceder.FlatStyle = FlatStyle.Flat;
             btnAcceder.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAcceder.ForeColor = Color.LightGray;
-            btnAcceder.Location = new Point(244, 238);
+            btnAcceder.Location = new Point(279, 317);
+            btnAcceder.Margin = new Padding(3, 4, 3, 4);
             btnAcceder.Name = "btnAcceder";
-            btnAcceder.Size = new Size(473, 40);
+            btnAcceder.Size = new Size(541, 53);
             btnAcceder.TabIndex = 6;
             btnAcceder.Text = "ACCEDER";
             btnAcceder.UseVisualStyleBackColor = false;
+            btnAcceder.Click += btnAcceder_Click;
             // 
             // btnCerrar
             // 
             btnCerrar.BackColor = Color.FromArgb(64, 64, 64);
             btnCerrar.BorderStyle = BorderStyle.FixedSingle;
             btnCerrar.Image = Properties.Resources.x;
-            btnCerrar.Location = new Point(724, 0);
+            btnCerrar.Location = new Point(827, 0);
+            btnCerrar.Margin = new Padding(3, 4, 3, 4);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(28, 20);
+            btnCerrar.Size = new Size(32, 26);
             btnCerrar.SizeMode = PictureBoxSizeMode.StretchImage;
             btnCerrar.TabIndex = 7;
             btnCerrar.TabStop = false;
@@ -154,9 +163,10 @@
             // 
             btnMinimizar.BackColor = Color.FromArgb(64, 64, 64);
             btnMinimizar.Image = Properties.Resources.minimisar;
-            btnMinimizar.Location = new Point(694, 5);
+            btnMinimizar.Location = new Point(793, 7);
+            btnMinimizar.Margin = new Padding(3, 4, 3, 4);
             btnMinimizar.Name = "btnMinimizar";
-            btnMinimizar.Size = new Size(25, 15);
+            btnMinimizar.Size = new Size(29, 20);
             btnMinimizar.SizeMode = PictureBoxSizeMode.StretchImage;
             btnMinimizar.TabIndex = 8;
             btnMinimizar.TabStop = false;
@@ -164,10 +174,10 @@
             // 
             // FRM_Inicio_Sesion
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(15, 15, 15);
-            ClientSize = new Size(755, 330);
+            ClientSize = new Size(863, 440);
             Controls.Add(btnMinimizar);
             Controls.Add(btnCerrar);
             Controls.Add(btnAcceder);
@@ -178,6 +188,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FRM_Inicio_Sesion";
             Opacity = 0.93D;
             StartPosition = FormStartPosition.CenterScreen;
