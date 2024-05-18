@@ -44,9 +44,10 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(66, 48);
             label1.Name = "label1";
-            label1.Size = new Size(51, 15);
+            label1.Size = new Size(68, 20);
             label1.TabIndex = 0;
             label1.Text = "Nombre";
             // 
@@ -60,10 +61,11 @@
             // 
             // button1
             // 
-            button1.Location = new Point(77, 235);
+            button1.Font = new Font("Century Gothic", 11.25F);
+            button1.Location = new Point(66, 235);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(82, 22);
+            button1.Size = new Size(86, 32);
             button1.TabIndex = 2;
             button1.Text = "Guardar";
             button1.UseVisualStyleBackColor = true;
@@ -72,9 +74,10 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 11.25F);
             label2.Location = new Point(66, 97);
             label2.Name = "label2";
-            label2.Size = new Size(47, 15);
+            label2.Size = new Size(63, 20);
             label2.TabIndex = 3;
             label2.Text = "Usuario";
             // 
@@ -90,18 +93,20 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(66, 149);
+            label3.Font = new Font("Century Gothic", 11.25F);
+            label3.Location = new Point(43, 149);
             label3.Name = "label3";
-            label3.Size = new Size(67, 15);
+            label3.Size = new Size(95, 20);
             label3.TabIndex = 5;
             label3.Text = "Contraseña";
             // 
             // button2
             // 
+            button2.Font = new Font("Century Gothic", 11.25F);
             button2.Location = new Point(171, 235);
             button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(82, 22);
+            button2.Size = new Size(100, 32);
             button2.TabIndex = 8;
             button2.Text = "Actualizar";
             button2.UseVisualStyleBackColor = true;
@@ -118,10 +123,11 @@
             // chbTipo
             // 
             chbTipo.AutoSize = true;
+            chbTipo.Font = new Font("Century Gothic", 11.25F);
             chbTipo.Location = new Point(86, 190);
             chbTipo.Margin = new Padding(3, 2, 3, 2);
             chbTipo.Name = "chbTipo";
-            chbTipo.Size = new Size(102, 19);
+            chbTipo.Size = new Size(128, 24);
             chbTipo.TabIndex = 10;
             chbTipo.Text = "Administrador";
             chbTipo.UseVisualStyleBackColor = true;

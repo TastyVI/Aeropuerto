@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             panel2 = new Panel();
             panel3 = new Panel();
             txtUsuario = new TextBox();
@@ -37,11 +38,10 @@
             btnAcceder = new Button();
             btnCerrar = new PictureBox();
             btnMinimizar = new PictureBox();
-            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -53,6 +53,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 330);
             panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.LogoAvion;
+            pictureBox1.Location = new Point(12, 81);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(177, 153);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -152,16 +162,6 @@
             btnMinimizar.TabStop = false;
             btnMinimizar.Click += btnMinimizar_Click;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.LogoAvion;
-            pictureBox1.Location = new Point(38, 87);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(121, 100);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
             // FRM_Inicio_Sesion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -179,14 +179,14 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FRM_Inicio_Sesion";
-            Opacity = 0.9D;
+            Opacity = 0.93D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FRM_Inicio_Sesion";
             Load += FRM_Inicio_Sesion_Load;
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
