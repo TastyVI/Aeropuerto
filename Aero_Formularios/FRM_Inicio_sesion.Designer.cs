@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
             panel2 = new Panel();
             panel3 = new Panel();
             txtUsuario = new TextBox();
@@ -38,8 +37,6 @@
             btnAcceder = new Button();
             btnCerrar = new PictureBox();
             btnMinimizar = new PictureBox();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
             SuspendLayout();
@@ -47,22 +44,11 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 51, 102);
-            panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 330);
             panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.LogoAvion;
-            pictureBox1.Location = new Point(24, 77);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(152, 180);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -182,8 +168,7 @@
             Opacity = 0.9D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FRM_Inicio_Sesion";
-            panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Load += FRM_Inicio_Sesion_Load;
             ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
             ResumeLayout(false);
@@ -199,7 +184,6 @@
         private TextBox txtContraseña;
         private Label label1;
         private Button btnAcceder;
-        private PictureBox pictureBox1;
         private PictureBox btnCerrar;
         private PictureBox btnMinimizar;
     }

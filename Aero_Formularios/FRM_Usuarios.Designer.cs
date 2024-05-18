@@ -44,24 +44,26 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(76, 64);
+            label1.Location = new Point(66, 48);
             label1.Name = "label1";
-            label1.Size = new Size(64, 20);
+            label1.Size = new Size(51, 15);
             label1.TabIndex = 0;
             label1.Text = "Nombre";
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(164, 64);
+            txtNombre.Location = new Point(144, 48);
+            txtNombre.Margin = new Padding(3, 2, 3, 2);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(125, 27);
+            txtNombre.Size = new Size(110, 23);
             txtNombre.TabIndex = 1;
             // 
             // button1
             // 
-            button1.Location = new Point(88, 313);
+            button1.Location = new Point(77, 235);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(82, 22);
             button1.TabIndex = 2;
             button1.Text = "Guardar";
             button1.UseVisualStyleBackColor = true;
@@ -70,34 +72,36 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(76, 129);
+            label2.Location = new Point(66, 97);
             label2.Name = "label2";
-            label2.Size = new Size(59, 20);
+            label2.Size = new Size(47, 15);
             label2.TabIndex = 3;
             label2.Text = "Usuario";
             // 
             // txtContrasena
             // 
-            txtContrasena.Location = new Point(164, 199);
+            txtContrasena.Location = new Point(144, 149);
+            txtContrasena.Margin = new Padding(3, 2, 3, 2);
             txtContrasena.Name = "txtContrasena";
             txtContrasena.PasswordChar = '*';
-            txtContrasena.Size = new Size(125, 27);
+            txtContrasena.Size = new Size(110, 23);
             txtContrasena.TabIndex = 6;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(76, 199);
+            label3.Location = new Point(66, 149);
             label3.Name = "label3";
-            label3.Size = new Size(83, 20);
+            label3.Size = new Size(67, 15);
             label3.TabIndex = 5;
             label3.Text = "Contraseña";
             // 
             // button2
             // 
-            button2.Location = new Point(195, 313);
+            button2.Location = new Point(171, 235);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(82, 22);
             button2.TabIndex = 8;
             button2.Text = "Actualizar";
             button2.UseVisualStyleBackColor = true;
@@ -105,17 +109,19 @@
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(161, 138);
+            txtUsuario.Location = new Point(141, 104);
+            txtUsuario.Margin = new Padding(3, 2, 3, 2);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(125, 27);
+            txtUsuario.Size = new Size(110, 23);
             txtUsuario.TabIndex = 9;
             // 
             // chbTipo
             // 
             chbTipo.AutoSize = true;
-            chbTipo.Location = new Point(98, 254);
+            chbTipo.Location = new Point(86, 190);
+            chbTipo.Margin = new Padding(3, 2, 3, 2);
             chbTipo.Name = "chbTipo";
-            chbTipo.Size = new Size(126, 24);
+            chbTipo.Size = new Size(102, 19);
             chbTipo.TabIndex = 10;
             chbTipo.Text = "Administrador";
             chbTipo.UseVisualStyleBackColor = true;
@@ -123,18 +129,19 @@
             // dgvDatos
             // 
             dgvDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDatos.Location = new Point(338, 31);
+            dgvDatos.Location = new Point(296, 23);
+            dgvDatos.Margin = new Padding(3, 2, 3, 2);
             dgvDatos.Name = "dgvDatos";
             dgvDatos.RowHeadersWidth = 51;
-            dgvDatos.Size = new Size(571, 448);
+            dgvDatos.Size = new Size(500, 336);
             dgvDatos.TabIndex = 11;
             dgvDatos.CellContentClick += dgvDatos_CellContentClick;
             // 
             // FRM_Usuarios
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
             Controls.Add(dgvDatos);
             Controls.Add(chbTipo);
             Controls.Add(txtUsuario);
@@ -145,9 +152,9 @@
             Controls.Add(button1);
             Controls.Add(txtNombre);
             Controls.Add(label1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FRM_Usuarios";
             Text = "frmUsuarios";
+            Load += FRM_Usuarios_Load;
             ((System.ComponentModel.ISupportInitialize)dgvDatos).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -65,5 +65,10 @@ namespace Aero_Formularios
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void FRM_Inicio_Sesion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -85,15 +85,15 @@ namespace Aero_Formularios
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
 
         }
 
         private void dgvDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
         }
-        private void dgvDatos_Click(object sender, EventArgs e) 
+        private void dgvDatos_Click(object sender, EventArgs e)
         {
             string comprobar;
             string oid = dgvDatos[0, dgvDatos.CurrentCell.RowIndex].Value.ToString();// en la matriz localiza la posicion del numero de control en este caso, y permite seleccionarlo 
@@ -103,7 +103,7 @@ namespace Aero_Formularios
             //el nombre en el servidor mongo
             if (usu != null)
             {
-                
+
                 comprobar = usu.Administrador.ToString();
                 txtContrasena.Text = usu.Contrasena;
                 txtNombre.Text = usu.Nombre;
@@ -119,6 +119,11 @@ namespace Aero_Formularios
             {
                 MessageBox.Show("Paquete no encontrado");
             }
+        }
+
+        private void FRM_Usuarios_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
