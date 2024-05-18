@@ -37,13 +37,17 @@
             btnAcceder = new Button();
             btnCerrar = new PictureBox();
             btnMinimizar = new PictureBox();
+            pictureBox1 = new PictureBox();
+            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(0, 51, 102);
+            panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -148,6 +152,16 @@
             btnMinimizar.TabStop = false;
             btnMinimizar.Click += btnMinimizar_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.LogoAvion;
+            pictureBox1.Location = new Point(38, 87);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(121, 100);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
             // FRM_Inicio_Sesion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -169,8 +183,10 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FRM_Inicio_Sesion";
             Load += FRM_Inicio_Sesion_Load;
+            panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnCerrar).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnMinimizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -186,5 +202,6 @@
         private Button btnAcceder;
         private PictureBox btnCerrar;
         private PictureBox btnMinimizar;
+        private PictureBox pictureBox1;
     }
 }
