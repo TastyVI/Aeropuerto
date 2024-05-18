@@ -83,43 +83,43 @@ namespace Aero_Formularios
             switch (numero)
             {
                 case 1:
-                    pbPiloto.Image = Image.FromFile("");
+                    pbPiloto.Image = Properties.Resources.CAP_ANET_CADENA;
                     lblNombrePiloto.Text = " Anet Cadena ";
                     break;
                 case 2:
-                    pbPiloto.Image =
+                    pbPiloto.Image = Properties.Resources.CAP_HADRI_DE_LOPEZ;
                     lblNombrePiloto.Text = "Hadri de Jesús";
                     break;
                 case 3:
-                    pbPiloto.Image = Image.FromFile();
+                    pbPiloto.Image = Properties.Resources.CAP__AFEHT_PEREZ;
                     lblNombrePiloto.Text = "Jafeth Perez";
                     break;
                 case 4:
-                    pbPiloto.Image = Image.FromFile();
+                    pbPiloto.Image = Properties.Resources.CAP_JESUS_BIBIANO;
                     lblNombrePiloto.Text = "Jesus Bibiano";
                     break;
                 case 5:
-                    pbPiloto.Image = Image.FromFile();
+                    pbPiloto.Image = Properties.Resources.CAP_JOSE_LUIS;
                     lblNombrePiloto.Text = "Jose Luis";
                     break;
                 case 6:
-                    pbPiloto.Image = Image.FromFile();
+                    pbPiloto.Image = Properties.Resources.CAP_JUAN_MANUEL;
                     lblNombrePiloto.Text = "Juan Manuel";
                     break;
                 case 7:
-                    pbPiloto.Image = Image.FromFile();
+                    pbPiloto.Image = Properties.Resources.CAP_LAZARO_BIBIANO;
                     lblNombrePiloto.Text = "Lazaro Bibiano";
                     break;
                 case 8:
-                    pbPiloto.Image = Image.FromFile();
+                    pbPiloto.Image = Properties.Resources.CAP_JACK_HARRIS;
                     lblNombrePiloto.Text = "Jack Harris";
                     break;
                 case 9:
-                    pbPiloto.Image = Image.FromFile();
+                    pbPiloto.Image = Properties.Resources.CAP_VAZILI_ZITZEP;
                     lblNombrePiloto.Text = "Vazili Zitzep";
                     break;
                 case 0:
-                    pbPiloto.Image = Image.FromFile();
+                    pbPiloto.Image = Properties.Resources.CAP_WILSON__ZALAZAR;
                     lblNombrePiloto.Text = "Wilson Zalazar";
                     break;
             }

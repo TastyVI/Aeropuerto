@@ -151,4 +151,34 @@
   <data name="minimisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimisar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CAP _AFEHT_PEREZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAP _AFEHT_PEREZ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAP_ANET_CADENA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAP_ANET_CADENA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAP_HADRI_DE_LOPEZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAP_HADRI_DE_LOPEZ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAP_JACK_HARRIS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAP_JACK_HARRIS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAP_JESUS_BIBIANO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAP_JESUS_BIBIANO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAP_JOSE_LUIS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAP_JOSE_LUIS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAP_JUAN_MANUEL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAP_JUAN_MANUEL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAP_LAZARO_BIBIANO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAP_LAZARO_BIBIANO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAP_VAZILI_ZITZEP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAP_VAZILI_ZITZEP.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAP_WILSON _ZALAZAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAP_WILSON _ZALAZAR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

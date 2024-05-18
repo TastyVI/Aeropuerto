@@ -123,6 +123,106 @@ namespace Aero_Formularios.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CAP__AFEHT_PEREZ {
+            get {
+                object obj = ResourceManager.GetObject("CAP _AFEHT_PEREZ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAP_ANET_CADENA {
+            get {
+                object obj = ResourceManager.GetObject("CAP_ANET_CADENA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAP_HADRI_DE_LOPEZ {
+            get {
+                object obj = ResourceManager.GetObject("CAP_HADRI_DE_LOPEZ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAP_JACK_HARRIS {
+            get {
+                object obj = ResourceManager.GetObject("CAP_JACK_HARRIS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAP_JESUS_BIBIANO {
+            get {
+                object obj = ResourceManager.GetObject("CAP_JESUS_BIBIANO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAP_JOSE_LUIS {
+            get {
+                object obj = ResourceManager.GetObject("CAP_JOSE_LUIS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAP_JUAN_MANUEL {
+            get {
+                object obj = ResourceManager.GetObject("CAP_JUAN_MANUEL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAP_LAZARO_BIBIANO {
+            get {
+                object obj = ResourceManager.GetObject("CAP_LAZARO_BIBIANO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAP_VAZILI_ZITZEP {
+            get {
+                object obj = ResourceManager.GetObject("CAP_VAZILI_ZITZEP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAP_WILSON__ZALAZAR {
+            get {
+                object obj = ResourceManager.GetObject("CAP_WILSON _ZALAZAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Embraer_E_Jet {
             get {
                 object obj = ResourceManager.GetObject("Embraer E-Jet", resourceCulture);
