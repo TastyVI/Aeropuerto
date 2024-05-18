@@ -83,53 +83,43 @@ namespace Aero_Formularios
             switch (numero)
             {
                 case 1:
-                    pbPiloto.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\Aeropuerto\\" +
-                        "Aero_Formularios\\Resources\\Capitanes\\CAP ANET CADENA.jpg");
+                    pbPiloto.Image = Image.FromFile("");
                     lblNombrePiloto.Text = " Anet Cadena ";
                     break;
                 case 2:
-                    pbPiloto.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\" +
-                        "Aeropuerto\\Aero_Formularios\\Resources\\Capitanes\\CAP HADRI DE LOPEZ.jpg");
+                    pbPiloto.Image =
                     lblNombrePiloto.Text = "Hadri de Jesús";
                     break;
                 case 3:
-                    pbPiloto.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\" +
-                        "Aeropuerto\\Aero_Formularios\\Resources\\Capitanes\\CAP JAFEHT PEREZ.jpg");
+                    pbPiloto.Image = Image.FromFile();
                     lblNombrePiloto.Text = "Jafeth Perez";
                     break;
                 case 4:
-                    pbPiloto.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\" +
-                        "Aeropuerto\\Aero_Formularios\\Resources\\Capitanes\\CAP JESUS BIBIANO.jpg");
+                    pbPiloto.Image = Image.FromFile();
                     lblNombrePiloto.Text = "Jesus Bibiano";
                     break;
                 case 5:
-                    pbPiloto.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\Aeropuerto\\" +
-                        "Aero_Formularios\\Resources\\Capitanes\\CAP JOSE LUIS.jpg");
+                    pbPiloto.Image = Image.FromFile();
                     lblNombrePiloto.Text = "Jose Luis";
                     break;
                 case 6:
-                    pbPiloto.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\Aeropuerto\\" +
-                        "Aero_Formularios\\Resources\\Capitanes\\CAP JUAN MANUEL.jpg");
+                    pbPiloto.Image = Image.FromFile();
                     lblNombrePiloto.Text = "Juan Manuel";
                     break;
                 case 7:
-                    pbPiloto.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\Aeropuerto\\" +
-                        "Aero_Formularios\\Resources\\Capitanes\\CAP LAZARO BIBIANO.jpg");
+                    pbPiloto.Image = Image.FromFile();
                     lblNombrePiloto.Text = "Lazaro Bibiano";
                     break;
                 case 8:
-                    pbPiloto.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\Aeropuerto\\" +
-                        "Aero_Formularios\\Resources\\Capitanes\\CAP JACK HARRIS.jpg");
+                    pbPiloto.Image = Image.FromFile();
                     lblNombrePiloto.Text = "Jack Harris";
                     break;
                 case 9:
-                    pbPiloto.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\Aeropuerto\\" +
-                        "Aero_Formularios\\Resources\\Capitanes\\CAP VAZILI ZITZEP.jpg");
+                    pbPiloto.Image = Image.FromFile();
                     lblNombrePiloto.Text = "Vazili Zitzep";
                     break;
                 case 0:
-                    pbPiloto.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\Aeropuerto\\" +
-                        "Aero_Formularios\\Resources\\Capitanes\\CAP WILSON  ZALAZAR.jpg");
+                    pbPiloto.Image = Image.FromFile();
                     lblNombrePiloto.Text = "Wilson Zalazar";
                     break;
             }
@@ -141,28 +131,22 @@ namespace Aero_Formularios
             switch (MODELO)
             {
                 case "Boeing 737":
-                    PBVisualizacion.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\" +
-                        "Aeropuerto\\Aero_Formularios\\Resources\\Boeing 737.jpeg");
+                    PBVisualizacion.Image = Properties.Resources.Boeing_737;
                     break;
                 case "Airbus A320":
-                    PBVisualizacion.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\Aeropuerto\\" +
-                        "Aero_Formularios\\Resources\\Airbus A320.jpeg");
+                    PBVisualizacion.Image =Properties.Resources.Airbus_A320;
                     break;
                 case "Embraer E-jet":
-                    PBVisualizacion.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\" +
-                        "Aeropuerto\\Aero_Formularios\\Resources\\Embraer E-Jet.jpeg");
+                    PBVisualizacion.Image = Properties.Resources.Embraer_E_Jet;
                     break;
                 case "Bombardier CRJ":
-                    PBVisualizacion.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\Aeropuerto\\" +
-                        "Aero_Formularios\\Resources\\Bombardier CRJ.jpeg");
+                    PBVisualizacion.Image = Properties.Resources.Bombardier_CRJ;
                     break;
                 case "Boeing 787":
-                    PBVisualizacion.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\Aeropuerto\\" +
-                        "Aero_Formularios\\Resources\\Boeing 787 Dreamliner.jpeg");
+                    PBVisualizacion.Image = Properties.Resources.Boeing_787_Dreamliner;
                     break;
                 case "Boeing 777":
-                    PBVisualizacion.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\" +
-                        "Aeropuerto\\Aero_Formularios\\Resources\\Boeing 777.jpeg");
+                    PBVisualizacion.Image = Properties.Resources.Boeing_777;
                     break;
 
             }
