@@ -41,6 +41,7 @@ namespace Aero_Formularios
         //esta listo para dos tipos de errores del poner mismo delugar de salida y destino y no elegir modelo de avión
         private void button1_Click(object sender, EventArgs e)
         {
+
             try
             {
                 if (CmbModeloAvion.Text == "Modelo")
@@ -79,7 +80,7 @@ namespace Aero_Formularios
         {
             int numero;
             Random rand = new Random();
-            numero = (int)rand.Next(0, 9);
+           numero = (int)rand.Next(0, 9);
             switch (numero)
             {
                 case 1:
