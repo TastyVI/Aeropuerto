@@ -13,9 +13,9 @@ namespace Aero_Formularios
         {
             InitializeComponent();
             panelIzquierdo = new Panel();
-            panelIzquierdo.Size = new Size(8, 60);
+            panelIzquierdo.Size = new Size(8, 44);
             panelMenu.Controls.Add(panelIzquierdo);
-           
+
 
         }
         //estructura
@@ -49,8 +49,8 @@ namespace Aero_Formularios
                 panelIzquierdo.Visible = true;
                 panelIzquierdo.BringToFront();
                 //icono formulario hijo
-                iconoFormularioHijo.IconChar = currentBtn.IconChar;
-                iconoFormularioHijo.IconColor = color;
+                iconoFHijo.IconChar = currentBtn.IconChar;
+                iconoFHijo.IconColor = color;
 
             }
 
@@ -89,20 +89,29 @@ namespace Aero_Formularios
             formularioHijo.Show();
             lblTituloFormularioHijo.Text = formularioHijo.Text;
         }
-        private void iconButton1_Click(object sender, EventArgs e)
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
         {
             activarBoton(sender, RGBColores.color5);
-            AbrirFormularioHijo(new FRM_Mapa_de_Mexico());
-        }
-
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
-            activarBoton(sender, RGBColores.color4);
             AbrirFormularioHijo(new FRM_Usuarios());
         }
 
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            activarBoton(sender, RGBColores.color2);
+            AbrirFormularioHijo(new FRM_Agregar_Vuelo());
+        }
+
+        private void btnMirar_Click(object sender, EventArgs e)
+        {
+            activarBoton(sender, RGBColores.color3);
+            AbrirFormularioHijo(new FRM_Mapa_de_Mexico());
+        }
+        
+
         private void btnInicio_Click(object sender, EventArgs e)
         {
+            FormularioHijo.Close();
             Reiniciar();
         }
 
@@ -110,9 +119,9 @@ namespace Aero_Formularios
         {
             DesactivarResaltado();
             panelIzquierdo.Visible = false;
-            iconoFormularioHijo.IconChar = IconChar.Home;
-            iconoFormularioHijo.IconColor = Color.DarkGray;
-            lblTituloFormularioHijo.Text = "Inicio";
+            iconoFHijo.IconChar = IconChar.Home;
+            iconoFHijo.IconColor = Color.DarkGray;
+            lblTituloFormularioHijo.Text = "INICIO";
         }
         //mueve el formulario a traves de ebento del mause
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -125,5 +134,7 @@ namespace Aero_Formularios
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+       
     }
 }
