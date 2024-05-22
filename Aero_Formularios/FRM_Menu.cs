@@ -87,7 +87,7 @@ namespace Aero_Formularios
             panelFormularios.Tag = formularioHijo;
             formularioHijo.BringToFront();
             formularioHijo.Show();
-            lblTituloFormularioHijo.Text = formularioHijo.Text;
+            //lblTituloFormularioHijo.Text = formularioHijo.Text;
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
@@ -121,7 +121,7 @@ namespace Aero_Formularios
             panelIzquierdo.Visible = false;
             iconoFHijo.IconChar = IconChar.Home;
             iconoFHijo.IconColor = Color.DarkGray;
-            lblTituloFormularioHijo.Text = "INICIO";
+           // lblTituloFormularioHijo.Text = "INICIO";
         }
         //mueve el formulario a traves de ebento del mause
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

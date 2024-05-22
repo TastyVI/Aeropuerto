@@ -121,9 +121,5 @@ namespace Aero_Formularios
             }
         }
 
-        private void FRM_Usuarios_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
