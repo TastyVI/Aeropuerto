@@ -39,7 +39,6 @@
             PBAeropuertoMerida = new PictureBox();
             FlwContenedorControles = new FlowLayoutPanel();
             PbAeropuertoGuadalajara = new PictureBox();
-            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)PbMapaDeMexico).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PVAeropuertoPuebla).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PBAeropuertoCDMX).BeginInit();
@@ -55,7 +54,7 @@
             // PbMapaDeMexico
             // 
             PbMapaDeMexico.Image = Properties.Resources.MAPA_DE_MEXICO;
-            PbMapaDeMexico.Location = new Point(2, -1);
+            PbMapaDeMexico.Location = new Point(3, 2);
             PbMapaDeMexico.Margin = new Padding(3, 2, 3, 2);
             PbMapaDeMexico.Name = "PbMapaDeMexico";
             PbMapaDeMexico.Size = new Size(781, 446);
@@ -163,15 +162,7 @@
             PbAeropuertoGuadalajara.TabIndex = 10;
             PbAeropuertoGuadalajara.TabStop = false;
             // 
-            // panel1
-            // 
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(987, 448);
-            panel1.TabIndex = 11;
-            // 
-            // Mapa_de_Mexico
+            // FRM_Mapa_de_Mexico
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -187,11 +178,10 @@
             Controls.Add(PBAeropuertoCDMX);
             Controls.Add(PVAeropuertoPuebla);
             Controls.Add(PbMapaDeMexico);
-            Controls.Add(panel1);
             Margin = new Padding(3, 2, 3, 2);
             MaximumSize = new Size(1003, 487);
             MinimumSize = new Size(1003, 487);
-            Name = "Mapa_de_Mexico";
+            Name = "FRM_Mapa_de_Mexico";
             Text = "Mapa_de_Mexico";
             ((System.ComponentModel.ISupportInitialize)PbMapaDeMexico).EndInit();
             ((System.ComponentModel.ISupportInitialize)PVAeropuertoPuebla).EndInit();
@@ -219,6 +209,5 @@
         private PictureBox PBAeropuertoMerida;
         private FlowLayoutPanel FlwContenedorControles;
         private PictureBox PbAeropuertoGuadalajara;
-        private Panel panel1;
     }
 }
