@@ -15,6 +15,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using MongoDB.Driver;
 using Biblioteca_de_Clases;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace Aero_Formularios
 {
     public partial class FRM_Agregar_Vuelo : Form
@@ -31,7 +32,7 @@ namespace Aero_Formularios
             InitializeComponent();
             //       PBVisualizacion.Image = Image.FromFile("C:\\Users\\carlo\\Source\\Repos\\TastyVI\\Aeropuerto\\Aero_Formularios\\Resources\\Imagen sin icono.jpg");
             cliente = new MongoClient("mongodb://localhost:27017");
-            db = cliente.GetDatabase("Aereopuerto");
+            db = cliente.GetDatabase("Aeropuerto");
             Vuelos_datos = db.GetCollection<DatosDelVuelo>("Vuelos");
             AsignacionCapitan();
             Cronometro.Start();
@@ -62,6 +63,8 @@ namespace Aero_Formularios
                         Datos.AeropuertoSalida = CmbAeropuertoSalida.Text;
                         Datos.AeropuertoDestino = CmbAeropuertoDestino.Text;
                         Vuelos_datos.InsertOne(Datos);
+                        MessageBox.Show("Vuelo registrado correctamente");
+                        Limpiar();
                     }
                     else
                     {
@@ -151,6 +154,15 @@ namespace Aero_Formularios
                     break;
 
             }
+        }
+
+        private void Limpiar()
+        {
+            CmbModeloAvion.Text = "Modelo";
+            AsignacionCapitan();
+            txtPasajeros.Text = "";
+            CmbAeropuertoSalida.SelectedItem = -1;
+            CmbAeropuertoDestino.SelectedItem = -1;
         }
     }
 }

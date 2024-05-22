@@ -28,7 +28,6 @@ namespace Aero_Formularios
             public static Color color5 = Color.FromArgb(249, 88, 221);
             public static Color color6 = Color.FromArgb(249, 88, 155);
 
-
         }
         private void activarBoton(object senderBtn, Color color)
         {
