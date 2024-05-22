@@ -25,11 +25,9 @@ namespace Aero_Formularios
         public FRM_Mapa_de_Mexico()
         {
             InitializeComponent();
-
+            PB_Avion = new PictureBox();
             Lista_Coordenadas = new Lista_Coordenadas();
             contenedor = Lista_Coordenadas.getLista();
-
-            PB_Avion = new PictureBox();
 
         }
 
@@ -44,7 +42,9 @@ namespace Aero_Formularios
             {
                 delegado_Movimiento dm = new delegado_Movimiento(metodo_Movimiento);
                 object[] m = { x, y };
+                PB_Avion.Location = new Point();
                 Invoke(dm,m);
+
             }
             else
             {
