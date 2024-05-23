@@ -8,6 +8,8 @@ namespace Aero_Formularios
         private IconButton currentBtn;
         private Panel panelIzquierdo;
         private Form FormularioHijo;
+        private Form formularioHijoActual;
+        private List<Form> formulariosHijos;
 
         public FRM_Menu()
         {
@@ -15,7 +17,7 @@ namespace Aero_Formularios
             panelIzquierdo = new Panel();
             panelIzquierdo.Size = new Size(8, 44);
             panelMenu.Controls.Add(panelIzquierdo);
-
+            formulariosHijos = new List<Form>();
 
         }
         //estructura
@@ -73,20 +75,30 @@ namespace Aero_Formularios
         {
             if (FormularioHijo != null)
             {
-                FormularioHijo.Close();
+                FormularioHijo.Hide();
 
             }
-            FormularioHijo = formularioHijo;
-            //
-            formularioHijo.TopLevel = false;
-            formularioHijo.FormBorderStyle = FormBorderStyle.None;
-            formularioHijo.Dock = DockStyle.Fill;
-            //
-            panelFormularios.Controls.Add(formularioHijo);
-            panelFormularios.Tag = formularioHijo;
-            formularioHijo.BringToFront();
-            formularioHijo.Show();
-            //lblTituloFormularioHijo.Text = formularioHijo.Text;
+            formularioHijoActual = formularioHijo;
+
+            if (!formulariosHijos.Contains(formularioHijo))
+            {
+                //
+                formularioHijo.TopLevel = false;
+                formularioHijo.FormBorderStyle = FormBorderStyle.None;
+                formularioHijo.Dock = DockStyle.Fill;
+                //
+                panelFormularios.Controls.Add(formularioHijo);
+                panelFormularios.Tag = formularioHijo;
+                formularioHijo.BringToFront();
+                formularioHijo.Show();
+                //lblTituloFormularioHijo.Text = formularioHijo.Text;
+            }
+            else
+            {
+                formularioHijo.BringToFront();
+                formularioHijo.Show();
+            }
+           
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
