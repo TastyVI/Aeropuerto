@@ -27,6 +27,7 @@ namespace Aero_Formularios
         List<DatosDelVuelo> Vuelos;
         string Id_usuario;
         string Id_mongo;
+
         public FRM_Agregar_Vuelo()
         {
             InitializeComponent();
@@ -62,7 +63,11 @@ namespace Aero_Formularios
                         Datos.Pasajeros = Convert.ToInt32(txtPasajeros.Text);
                         Datos.AeropuertoSalida = CmbAeropuertoSalida.Text;
                         Datos.AeropuertoDestino = CmbAeropuertoDestino.Text;
+                        Datos.Status = "En espera...";
                         Vuelos_datos.InsertOne(Datos);
+
+                        string inicio = CmbAeropuertoSalida.Text;
+                        string final = CmbAeropuertoDestino.Text;
                         MessageBox.Show("Vuelo registrado correctamente");
                         Limpiar();
                     }

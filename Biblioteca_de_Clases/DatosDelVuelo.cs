@@ -20,5 +20,7 @@ namespace Biblioteca_de_Clases
         public string? AeropuertoSalida { get; set; }
         [BsonElement("Destino")]
         public string? AeropuertoDestino { get; set; }
+        [BsonElement("Status")]
+        public string? Status { get; set; }
     }
 }

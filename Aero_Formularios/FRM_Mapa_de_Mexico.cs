@@ -3,33 +3,33 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Amazon.Runtime.Internal.Endpoints.StandardLibrary;
 using Biblioteca_de_Clases;
+using MongoDB.Driver;
 
 namespace Aero_Formularios
 {
     public partial class FRM_Mapa_de_Mexico : Form
     {
+        /*############################### Base de Datos (BD) #############################
+         * ###############################################################################*/
+
+        MongoClient cliente;
+        IMongoDatabase db;
+        IMongoCollection<DatosDelVuelo> Vuelos_datos;
+
         /*########################### Variables e Inicilizaicones #########################
          * ###############################################################################*/
 
         Contenedor contenedor;
         Lista_Coordenadas Lista_Coordenadas;
-        DatosDelVuelo datosDelVuelo {  get; set; }
-
-        int coordenada_Inicial_X;
-        int coordenada_Inicial_Y;
-
-        int coordenada_Final_X;
-        int coordenada_Final_Y;
-
-        bool vuelo;
         Thread hilo_Vuelo;
 
-        
         public FRM_Mapa_de_Mexico()
         {
             InitializeComponent();
@@ -37,71 +37,131 @@ namespace Aero_Formularios
             Lista_Coordenadas = new Lista_Coordenadas();
             contenedor = Lista_Coordenadas.getLista();
 
-            vuelo = true;
+            cliente = new MongoClient("mongodb://localhost:27017");
+            db = cliente.GetDatabase("Aeropuerto");
+            Vuelos_datos = db.GetCollection<DatosDelVuelo>("Vuelos");
+            IniciarVuelos();
 
-            coordenada_Inicial_X = 50;
-            coordenada_Inicial_Y = 50;
-            coordenada_Final_X = 300;    
-            coordenada_Final_Y = 300;
-
-            hilo_Vuelo = new Thread(Vuelo);
-            hilo_Vuelo.IsBackground = true;
-            hilo_Vuelo.Start();
-        }
-
-        /*######################### Delegados y sus metodos #############################
-        * ###############################################################################*/
-
-
-        private delegate void delegado_Movimiento(int x, int y, PictureBox p);
-        private void metodo_Movimiento(int x, int y, PictureBox p)
-        {
-            
-            if (InvokeRequired)
-            {
-                delegado_Movimiento dm = new delegado_Movimiento(metodo_Movimiento);
-                object[] m = { x, y, p };
-                Invoke(dm,m);
-            }
-            else
-            {
-                p.Location = new Point(x, y);
-                
-            }
         }
 
         /*################################### Metodos #################################
-       * ###############################################################################*/
+         ###############################################################################*/
 
-        private void Vuelo()
+        private void IniciarVuelos()
         {
-            PictureBox plane = new PictureBox();
-            plane.Location = new Point(coordenada_Inicial_X, coordenada_Inicial_Y);
-            plane.Size = new Size(30,30);    
-            plane.BackColor = Color.Red;
-            PbMapaDeMexico.Controls.Add(plane);
-
-            int x = plane.Location.X;
-            int y = plane.Location.Y;
-            Point final = new Point(coordenada_Final_X, coordenada_Final_Y);
-            //Controls.Add(PB_Avion);
-            while (plane.Location != final && vuelo == true)
+            List<DatosDelVuelo> vuelos = Vuelos_datos.Find(v => v.Status == "En espera...").ToList();
+            foreach (DatosDelVuelo v in vuelos)
             {
-                if (x < final.X)
-                    x++;
-                else if (x > final.X)
-                    x--;
+                List<Coordenada> coordenadas = EstablecerCoordenadas(v);
 
-                if (y < final.Y)
-                    y++;
-                else if (y > final.Y)
-                    y--;
-                metodo_Movimiento(x,y,plane);
-                Thread.Sleep(100);
+                Coordenada inicio = coordenadas[0];
+                Coordenada fin = coordenadas[1];
+
+                Vuelo vuelo = new Vuelo(PbMapaDeMexico, inicio, fin);
+            }
+        }
+
+        private List<Coordenada> EstablecerCoordenadas(DatosDelVuelo v)
+        {
+
+            List<Coordenada> lista = new List<Coordenada>();
+            lista.Clear();
+
+            //####################### Inicial #######################3
+            if (v.AeropuertoSalida == "Tijuana")
+            {
+                Coordenada c = contenedor.getCoordenada(0);
+                lista.Add(c);
+            }
+            else if (v.AeropuertoSalida == "Chihuahua")
+            {
+                Coordenada c = contenedor.getCoordenada(1);
+                lista.Add(c);
+            }
+            else if (v.AeropuertoSalida == "Monterrey")
+            {
+                Coordenada c = contenedor.getCoordenada(2);
+                lista.Add(c);
+            }
+            else if (v.AeropuertoSalida == "Guadalajara")
+            {
+                Coordenada c = contenedor.getCoordenada(3);
+                lista.Add(c);
+            }
+            else if (v.AeropuertoSalida == "Ciudad de Mexico")
+            {
+                Coordenada c = contenedor.getCoordenada(4);
+                lista.Add(c);
+            }
+            else if (v.AeropuertoSalida == "Puebla")
+            {
+                Coordenada c = contenedor.getCoordenada(5);
+                lista.Add(c);
+            }
+            else if (v.AeropuertoSalida == "Acapulco")
+            {
+                Coordenada c = contenedor.getCoordenada(6);
+                lista.Add(c);
+            }
+            else if (v.AeropuertoSalida == "Merida")
+            {
+                Coordenada c = contenedor.getCoordenada(7);
+                lista.Add(c);
+            }
+            else if (v.AeropuertoSalida == "Cancún")
+            {
+                Coordenada c = contenedor.getCoordenada(8);
+                lista.Add(c);
             }
 
-            vuelo = false;
+            //###################### Final #########################
+            if (v.AeropuertoDestino == "Tijuana")
+            {
+                Coordenada c1 = contenedor.getCoordenada(0);
+                lista.Add(c1);
+            }
+            else if (v.AeropuertoDestino == "Chihuahua")
+            {
+                Coordenada c1 = contenedor.getCoordenada(1);
+                lista.Add(c1);
+            }
+            else if (v.AeropuertoDestino == "Monterrey")
+            {
+                Coordenada c1 = contenedor.getCoordenada(2);
+                lista.Add(c1);
+            }
+            else if (v.AeropuertoDestino == "Guadalajara")
+            {
+                Coordenada c1 = contenedor.getCoordenada(3);
+                lista.Add(c1);
+            }
+            else if (v.AeropuertoDestino == "Ciudad de Mexico")
+            {
+                Coordenada c1 = contenedor.getCoordenada(4);
+                lista.Add(c1);
+            }
+            else if (v.AeropuertoDestino == "Puebla")
+            {
+                Coordenada c1 = contenedor.getCoordenada(5);
+                lista.Add(c1);
+            }
+            else if (v.AeropuertoDestino == "Acapulco")
+            {
+                Coordenada c1 = contenedor.getCoordenada(6);
+                lista.Add(c1);
+            }
+            else if (v.AeropuertoDestino == "Merida")
+            {
+                Coordenada c1 = contenedor.getCoordenada(7);
+                lista.Add(c1);
+            }
+            else if (v.AeropuertoDestino == "Cancún")
+            {
+                Coordenada c1 = contenedor.getCoordenada(8);
+                lista.Add(c1);
+            }
 
+            return lista;
         }
 
     }

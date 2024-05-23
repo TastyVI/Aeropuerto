@@ -69,7 +69,7 @@ namespace Aero_Formularios
 
             }
         }
-        private void AbrirFormularioHijo(Form formularioHijo)
+        public void AbrirFormularioHijo(Form formularioHijo)
         {
             if (FormularioHijo != null)
             {
