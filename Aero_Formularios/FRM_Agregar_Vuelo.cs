@@ -54,22 +54,57 @@ namespace Aero_Formularios
                 {
                     if (CmbAeropuertoSalida.Text != CmbAeropuertoDestino.Text)
                     {
-                        DatosDelVuelo Datos = new DatosDelVuelo();
-                        txtPasajeros.Text.ToLower();
-                        txtPasajeros.Text.Replace("a,b,c,d,e,f,g,h,i,j,k,l,m,n,ñ,o,p,q,r,s,t,u,v,w,x,y,z,°," +
-                            "!,;,#,$,%,&,/,(,=,),?,¡,¿,+,*,-,@","");
-                        Datos.Capitan = lblNombrePiloto.Text;
-                        Datos.Modelo = CmbModeloAvion.Text;
-                        Datos.Pasajeros = Convert.ToInt32(txtPasajeros.Text);
-                        Datos.AeropuertoSalida = CmbAeropuertoSalida.Text;
-                        Datos.AeropuertoDestino = CmbAeropuertoDestino.Text;
-                        Datos.Status = "En espera...";
-                        Vuelos_datos.InsertOne(Datos);
+                        if (CmbAeropuertoSalida.Text == "Aeropuerto de inicio")
+                        {
+                            MessageBox.Show("no hay Aeropuerto de salida");
+                        }
+                        else
+                        {
+                            if (CmbAeropuertoDestino.Text == "Aeropuerto de destino")
+                            {
+                                MessageBox.Show("no hay Aeropuerto de destino");
+                            }
+                            else
+                            {
+                                if (txtPasajeros.Text == "")
+                                {
+                                    MessageBox.Show("no hay pasajeros");
+                                }
+                                else
+                                {
+                                    string cadena = txtPasajeros.Text.ToLower();
+                                    string[] remplazar= {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ","o","p","q","r","s","t","u","v","w","x","y","z","°" +
+                                            "!",";","#","$","%","&","/","(","=",")","?","¡","¿","+","*","-","@", "'","\"" };
+                                    string[] remplazo = {""};
+                                    for (int i = 0; i < remplazar.Length; i++)
+                                    {
+                                        cadena = cadena.Replace(remplazar[i], remplazo[0]);
+                                    }
+                                    DatosDelVuelo Datos = new DatosDelVuelo();
+                                    int aux = Convert.ToInt32(cadena);
+                                    if (aux==0||aux > 200)
+                                    {
+                                        MessageBox.Show("el Avion puede transportar 1~200 pasajeros");
+                                    }
+                                    else
+                                    {
+                                        
+                                        Datos.Capitan = lblNombrePiloto.Text;
+                                        Datos.Modelo = CmbModeloAvion.Text;
+                                        Datos.Pasajeros = Convert.ToInt32(aux);
+                                        Datos.AeropuertoSalida = CmbAeropuertoSalida.Text;
+                                        Datos.AeropuertoDestino = CmbAeropuertoDestino.Text;
+                                        Datos.Status = "En espera...";
+                                        Vuelos_datos.InsertOne(Datos);
 
-                        string inicio = CmbAeropuertoSalida.Text;
-                        string final = CmbAeropuertoDestino.Text;
-                        MessageBox.Show("Vuelo registrado correctamente");
-                        Limpiar();
+                                        string inicio = CmbAeropuertoSalida.Text;
+                                        string final = CmbAeropuertoDestino.Text;
+                                        MessageBox.Show("Vuelo registrado correctamente");
+                                        Limpiar();
+                                    }
+                                }
+                            }
+                        }
                     }
                     else
                     {
@@ -79,7 +114,7 @@ namespace Aero_Formularios
             }
             catch (Exception)
             {
-                    throw;
+                throw;
             }
 
         }
@@ -166,8 +201,8 @@ namespace Aero_Formularios
             CmbModeloAvion.Text = "Modelo";
             AsignacionCapitan();
             txtPasajeros.Text = "";
-            CmbAeropuertoSalida.SelectedItem = -1;
-            CmbAeropuertoDestino.SelectedItem = -1;
+            CmbAeropuertoSalida.Text= "Aeropuerto de inicio";
+            CmbAeropuertoDestino.Text= "Aeropuerto de destino";
         }
     }
 }

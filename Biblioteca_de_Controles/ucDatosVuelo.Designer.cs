@@ -1,6 +1,6 @@
 ﻿namespace Biblioteca_de_Controles
 {
-    partial class UserControl1
+    partial class ucDatosVuelo
     {
         /// <summary>
         /// Required designer variable.

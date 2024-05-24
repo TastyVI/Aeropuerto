@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Amazon.Runtime.Internal.Endpoints.StandardLibrary;
 using Biblioteca_de_Clases;
+using Biblioteca_de_Controles;
 using MongoDB.Driver;
 
 namespace Aero_Formularios
@@ -162,6 +163,19 @@ namespace Aero_Formularios
             }
 
             return lista;
+        }
+
+        public void mostarControles()
+        {
+            ucDatosVuelo ControlesVuelo = new ucDatosVuelo();
+            List<DatosDelVuelo> Lista = Vuelos_datos.Find(p => true).ToList();
+            foreach (DatosDelVuelo d in Lista)
+            {
+                ControlesVuelo.datosDelVuelo = d;
+                ControlesVuelo.Informacion();
+            }
+            FlwContenedorControles.Controls.Add(ControlesVuelo);
+
         }
 
     }
