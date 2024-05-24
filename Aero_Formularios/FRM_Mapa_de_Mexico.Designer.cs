@@ -166,6 +166,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(105, 149, 160);
             ClientSize = new Size(987, 448);
             Controls.Add(PbAeropuertoGuadalajara);
             Controls.Add(FlwContenedorControles);
