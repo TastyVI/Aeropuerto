@@ -135,6 +135,7 @@
             // 
             // FlwContenedorControles
             // 
+            FlwContenedorControles.AutoScroll = true;
             FlwContenedorControles.BorderStyle = BorderStyle.FixedSingle;
             FlwContenedorControles.Dock = DockStyle.Right;
             FlwContenedorControles.Location = new Point(902, 0);
