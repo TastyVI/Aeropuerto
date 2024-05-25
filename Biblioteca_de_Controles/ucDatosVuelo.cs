@@ -11,7 +11,7 @@ namespace Biblioteca_de_Controles
         }
         public void Informacion()
         {
-
+            label2.Text = datosDelVuelo.Id;
             LblAeropuertoAterrizaje.Text = datosDelVuelo.AeropuertoDestino;
             LblAeropuertoDespegue.Text = datosDelVuelo.AeropuertoSalida;
             LblNombreCapitan.Text = datosDelVuelo.Capitan;

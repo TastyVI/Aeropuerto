@@ -42,6 +42,7 @@ namespace Aero_Formularios
             db = cliente.GetDatabase("Aeropuerto");
             Vuelos_datos = db.GetCollection<DatosDelVuelo>("Vuelos");
             IniciarVuelos();
+            mostarControles();
 
         }
 
@@ -170,7 +171,8 @@ namespace Aero_Formularios
             
             List<DatosDelVuelo> Lista = Vuelos_datos.Find(p => true).ToList();
             foreach (DatosDelVuelo d in Lista)
-            {ucDatosVuelo ControlesVuelo = new ucDatosVuelo();
+            {
+                ucDatosVuelo ControlesVuelo = new ucDatosVuelo();
                 ControlesVuelo.datosDelVuelo = d;
                 ControlesVuelo.Informacion();
              FlwContenedorControles.Controls.Add(ControlesVuelo);

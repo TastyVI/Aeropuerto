@@ -88,6 +88,7 @@ namespace Aero_Formularios
                                     if (aux==0||aux > 200)
                                     {
                                         MessageBox.Show("el Avion puede transportar 1~200 pasajeros");
+                                        txtPasajeros.Clear();
                                     }
                                     else
                                     {
