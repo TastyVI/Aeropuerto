@@ -140,10 +140,15 @@ namespace Aero_Formularios
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-       /* private void horaFecha_Tick(object sender, EventArgs e)
+        private void horaFecha_Tick(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void horaFecha_Tick_1(object sender, EventArgs e)
         {
             lblHora.Text = DateTime.Now.ToString("hh:mm:ss");
             lblFecha.Text = DateTime.Now.ToLongDateString();
-        }*/
+        }
     }
 }

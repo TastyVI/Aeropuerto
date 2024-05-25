@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_Menu));
             panelMenu = new Panel();
             btnMirar = new FontAwesome.Sharp.IconButton();
@@ -39,11 +40,17 @@
             iconoFHijo = new FontAwesome.Sharp.IconPictureBox();
             lblTituloFormularioHijo = new Label();
             panelFormularios = new Panel();
+            pictureBox1 = new PictureBox();
+            lblFecha = new Label();
+            lblHora = new Label();
+            horaFecha = new System.Windows.Forms.Timer(components);
             panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnInicio).BeginInit();
             BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconoFHijo).BeginInit();
+            panelFormularios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panelMenu
@@ -187,12 +194,52 @@
             // 
             // panelFormularios
             // 
-            panelFormularios.BackColor = SystemColors.ControlDark;
+            panelFormularios.BackColor = Color.FromArgb(17, 65, 126);
+            panelFormularios.Controls.Add(pictureBox1);
+            panelFormularios.Controls.Add(lblFecha);
+            panelFormularios.Controls.Add(lblHora);
             panelFormularios.Dock = DockStyle.Fill;
             panelFormularios.Location = new Point(190, 55);
             panelFormularios.Name = "panelFormularios";
             panelFormularios.Size = new Size(1114, 467);
             panelFormularios.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.mundo;
+            pictureBox1.Location = new Point(397, 6);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(319, 249);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
+            // lblFecha
+            // 
+            lblFecha.AutoSize = true;
+            lblFecha.Font = new Font("Imprint MT Shadow", 24F);
+            lblFecha.ForeColor = Color.FromArgb(120, 147, 157);
+            lblFecha.Location = new Point(380, 398);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(97, 38);
+            lblFecha.TabIndex = 1;
+            lblFecha.Text = "label2";
+            // 
+            // lblHora
+            // 
+            lblHora.AutoSize = true;
+            lblHora.Font = new Font("Stencil", 90F);
+            lblHora.ForeColor = Color.FromArgb(208, 192, 164);
+            lblHora.Location = new Point(337, 243);
+            lblHora.Name = "lblHora";
+            lblHora.Size = new Size(481, 142);
+            lblHora.TabIndex = 0;
+            lblHora.Text = "label1";
+            // 
+            // horaFecha
+            // 
+            horaFecha.Enabled = true;
+            horaFecha.Tick += horaFecha_Tick_1;
             // 
             // FRM_Menu
             // 
@@ -212,6 +259,9 @@
             BarraTitulo.ResumeLayout(false);
             BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconoFHijo).EndInit();
+            panelFormularios.ResumeLayout(false);
+            panelFormularios.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -228,5 +278,9 @@
         private FontAwesome.Sharp.IconButton btnAgregar;
         private FontAwesome.Sharp.IconPictureBox iconoFHijo;
         private Panel panelFormularios;
+        private Label lblFecha;
+        private Label lblHora;
+        private System.Windows.Forms.Timer horaFecha;
+        private PictureBox pictureBox1;
     }
 }
