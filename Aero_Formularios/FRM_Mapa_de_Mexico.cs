@@ -60,6 +60,9 @@ namespace Aero_Formularios
                 Coordenada fin = coordenadas[1];
 
                 Vuelo vuelo = new Vuelo(PbMapaDeMexico, inicio, fin);
+                
+                v.Status = "Vuelo Completado";
+                Vuelos_datos.ReplaceOne(vu => vu.Id == v.Id, v);
             }
         }
 
