@@ -56,7 +56,7 @@
             panelMenu.Dock = DockStyle.Left;
             panelMenu.Location = new Point(0, 0);
             panelMenu.Name = "panelMenu";
-            panelMenu.Size = new Size(190, 545);
+            panelMenu.Size = new Size(190, 522);
             panelMenu.TabIndex = 0;
             // 
             // btnMirar
@@ -157,7 +157,7 @@
             BarraTitulo.Dock = DockStyle.Top;
             BarraTitulo.Location = new Point(190, 0);
             BarraTitulo.Name = "BarraTitulo";
-            BarraTitulo.Size = new Size(1004, 55);
+            BarraTitulo.Size = new Size(1094, 55);
             BarraTitulo.TabIndex = 1;
             BarraTitulo.MouseDown += BarraTitulo_MouseDown;
             // 
@@ -193,21 +193,20 @@
             panelFormularios.Dock = DockStyle.Fill;
             panelFormularios.Location = new Point(190, 55);
             panelFormularios.MaximumSize = new Size(1003, 487);
-            panelFormularios.MinimumSize = new Size(1003, 487);
             panelFormularios.Name = "panelFormularios";
-            panelFormularios.Size = new Size(1003, 487);
+            panelFormularios.Size = new Size(1003, 467);
             panelFormularios.TabIndex = 2;
             // 
             // FRM_Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1194, 545);
+            ClientSize = new Size(1284, 522);
             Controls.Add(panelFormularios);
             Controls.Add(BarraTitulo);
             Controls.Add(panelMenu);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            MinimumSize = new Size(1196, 548);
+            MinimumSize = new Size(1207, 561);
             Name = "FRM_Menu";
             Text = "Form1";
             panelMenu.ResumeLayout(false);

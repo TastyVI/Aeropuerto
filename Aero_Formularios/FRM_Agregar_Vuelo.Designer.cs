@@ -46,15 +46,15 @@
             Cronometro = new System.Windows.Forms.Timer(components);
             panel2 = new Panel();
             panel3 = new Panel();
-            panel4 = new Panel();
             pictureBox1 = new PictureBox();
+            panel4 = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PBVisualizacion).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbPiloto).BeginInit();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
-            panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -63,17 +63,19 @@
             panel1.Controls.Add(PBVisualizacion);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(CmbModeloAvion);
-            panel1.Location = new Point(386, 15);
+            panel1.Location = new Point(338, 11);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(601, 281);
+            panel1.Size = new Size(526, 211);
             panel1.TabIndex = 0;
             // 
             // PBVisualizacion
             // 
             PBVisualizacion.BorderStyle = BorderStyle.FixedSingle;
-            PBVisualizacion.Location = new Point(226, 65);
+            PBVisualizacion.Location = new Point(198, 49);
+            PBVisualizacion.Margin = new Padding(3, 2, 3, 2);
             PBVisualizacion.Name = "PBVisualizacion";
-            PBVisualizacion.Size = new Size(360, 189);
+            PBVisualizacion.Size = new Size(315, 142);
             PBVisualizacion.SizeMode = PictureBoxSizeMode.StretchImage;
             PBVisualizacion.TabIndex = 1;
             PBVisualizacion.TabStop = false;
@@ -83,9 +85,9 @@
             label2.BackColor = Color.Transparent;
             label2.FlatStyle = FlatStyle.Popup;
             label2.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(226, 1);
+            label2.Location = new Point(198, 1);
             label2.Name = "label2";
-            label2.Size = new Size(355, 44);
+            label2.Size = new Size(311, 33);
             label2.TabIndex = 7;
             label2.Text = "Avión listo para volar";
             // 
@@ -98,9 +100,10 @@
             CmbModeloAvion.FormattingEnabled = true;
             CmbModeloAvion.ImeMode = ImeMode.Katakana;
             CmbModeloAvion.Items.AddRange(new object[] { "Boeing 737", "Airbus A320", "Embraer E-jet", "Bombardier CRJ", "Boeing 787", "Boeing 777" });
-            CmbModeloAvion.Location = new Point(6, 91);
+            CmbModeloAvion.Location = new Point(5, 68);
+            CmbModeloAvion.Margin = new Padding(3, 2, 3, 2);
             CmbModeloAvion.Name = "CmbModeloAvion";
-            CmbModeloAvion.Size = new Size(213, 38);
+            CmbModeloAvion.Size = new Size(187, 30);
             CmbModeloAvion.TabIndex = 8;
             CmbModeloAvion.Text = "Modelo";
             // 
@@ -111,7 +114,7 @@
             label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold);
             label1.Location = new Point(3, 1);
             label1.Name = "label1";
-            label1.Size = new Size(155, 40);
+            label1.Size = new Size(136, 30);
             label1.TabIndex = 1;
             label1.Text = "Vuelo de";
             // 
@@ -124,9 +127,10 @@
             CmbAeropuertoSalida.FormattingEnabled = true;
             CmbAeropuertoSalida.ImeMode = ImeMode.Katakana;
             CmbAeropuertoSalida.Items.AddRange(new object[] { "Tijuana", "Chihuahua", "Monterrey", "Puebla", "Ciudad de Mexico", "Acapulco", "Cancún", "Merida" });
-            CmbAeropuertoSalida.Location = new Point(166, 1);
+            CmbAeropuertoSalida.Location = new Point(145, 1);
+            CmbAeropuertoSalida.Margin = new Padding(3, 2, 3, 2);
             CmbAeropuertoSalida.Name = "CmbAeropuertoSalida";
-            CmbAeropuertoSalida.Size = new Size(270, 38);
+            CmbAeropuertoSalida.Size = new Size(237, 30);
             CmbAeropuertoSalida.TabIndex = 4;
             CmbAeropuertoSalida.Text = "Aeropuerto de inicio";
             // 
@@ -135,9 +139,9 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold);
-            label3.Location = new Point(3, 48);
+            label3.Location = new Point(3, 36);
             label3.Name = "label3";
-            label3.Size = new Size(242, 40);
+            label3.Size = new Size(192, 32);
             label3.TabIndex = 5;
             label3.Text = "con destino a";
             // 
@@ -149,9 +153,10 @@
             CmbAeropuertoDestino.ForeColor = Color.Gainsboro;
             CmbAeropuertoDestino.FormattingEnabled = true;
             CmbAeropuertoDestino.Items.AddRange(new object[] { "Tijuana", "Chihuahua", "Monterrey", "Puebla", "Ciudad de Mexico", "Acapulco", "Cancún", "Merida" });
-            CmbAeropuertoDestino.Location = new Point(230, 47);
+            CmbAeropuertoDestino.Location = new Point(201, 35);
+            CmbAeropuertoDestino.Margin = new Padding(3, 2, 3, 2);
             CmbAeropuertoDestino.Name = "CmbAeropuertoDestino";
-            CmbAeropuertoDestino.Size = new Size(276, 38);
+            CmbAeropuertoDestino.Size = new Size(242, 30);
             CmbAeropuertoDestino.TabIndex = 6;
             CmbAeropuertoDestino.Text = "Aeropuerto de destino";
             // 
@@ -161,10 +166,10 @@
             BtnAgregar.BackgroundImage = Properties.Resources.x;
             BtnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BtnAgregar.ForeColor = SystemColors.Control;
-            BtnAgregar.Location = new Point(6, 208);
-            BtnAgregar.Margin = new Padding(15, 15, 15, 15);
+            BtnAgregar.Location = new Point(5, 156);
+            BtnAgregar.Margin = new Padding(13, 11, 13, 11);
             BtnAgregar.Name = "BtnAgregar";
-            BtnAgregar.Size = new Size(366, 69);
+            BtnAgregar.Size = new Size(320, 52);
             BtnAgregar.TabIndex = 9;
             BtnAgregar.Text = "AGREGAR";
             BtnAgregar.UseVisualStyleBackColor = false;
@@ -178,18 +183,19 @@
             lblNombrePiloto.FlatStyle = FlatStyle.System;
             lblNombrePiloto.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblNombrePiloto.ForeColor = Color.Gainsboro;
-            lblNombrePiloto.Location = new Point(176, 109);
+            lblNombrePiloto.Location = new Point(154, 82);
             lblNombrePiloto.Name = "lblNombrePiloto";
-            lblNombrePiloto.Size = new Size(59, 32);
+            lblNombrePiloto.Size = new Size(47, 24);
             lblNombrePiloto.TabIndex = 11;
             lblNombrePiloto.Text = "text";
             // 
             // pbPiloto
             // 
             pbPiloto.BorderStyle = BorderStyle.FixedSingle;
-            pbPiloto.Location = new Point(18, 77);
+            pbPiloto.Location = new Point(16, 58);
+            pbPiloto.Margin = new Padding(3, 2, 3, 2);
             pbPiloto.Name = "pbPiloto";
-            pbPiloto.Size = new Size(151, 127);
+            pbPiloto.Size = new Size(132, 96);
             pbPiloto.SizeMode = PictureBoxSizeMode.StretchImage;
             pbPiloto.TabIndex = 12;
             pbPiloto.TabStop = false;
@@ -199,9 +205,9 @@
             label4.BackColor = Color.Transparent;
             label4.FlatStyle = FlatStyle.Popup;
             label4.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold);
-            label4.Location = new Point(8, 17);
+            label4.Location = new Point(7, 13);
             label4.Name = "label4";
-            label4.Size = new Size(146, 45);
+            label4.Size = new Size(128, 34);
             label4.TabIndex = 13;
             label4.Text = "Capitan";
             // 
@@ -210,9 +216,9 @@
             label5.BackColor = Color.Transparent;
             label5.FlatStyle = FlatStyle.Popup;
             label5.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold);
-            label5.Location = new Point(3, 43);
+            label5.Location = new Point(3, 32);
             label5.Name = "label5";
-            label5.Size = new Size(374, 45);
+            label5.Size = new Size(327, 34);
             label5.TabIndex = 15;
             label5.Text = "Cantidad de pasajeros";
             // 
@@ -221,9 +227,10 @@
             txtPasajeros.BackColor = Color.FromArgb(65, 95, 107);
             txtPasajeros.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtPasajeros.ForeColor = Color.Gainsboro;
-            txtPasajeros.Location = new Point(103, 120);
+            txtPasajeros.Location = new Point(90, 90);
+            txtPasajeros.Margin = new Padding(3, 2, 3, 2);
             txtPasajeros.Name = "txtPasajeros";
-            txtPasajeros.Size = new Size(163, 37);
+            txtPasajeros.Size = new Size(143, 31);
             txtPasajeros.TabIndex = 16;
             // 
             // Cronometro
@@ -236,10 +243,9 @@
             panel2.Controls.Add(pbPiloto);
             panel2.Controls.Add(lblNombrePiloto);
             panel2.Controls.Add(label4);
-            panel2.Location = new Point(14, 16);
-            panel2.Margin = new Padding(3, 4, 3, 4);
+            panel2.Location = new Point(12, 12);
             panel2.Name = "panel2";
-            panel2.Size = new Size(366, 208);
+            panel2.Size = new Size(320, 156);
             panel2.TabIndex = 17;
             // 
             // panel3
@@ -250,11 +256,22 @@
             panel3.Controls.Add(label3);
             panel3.Controls.Add(CmbAeropuertoDestino);
             panel3.Controls.Add(CmbAeropuertoSalida);
-            panel3.Location = new Point(386, 303);
-            panel3.Margin = new Padding(3, 4, 3, 4);
+            panel3.Location = new Point(338, 227);
             panel3.Name = "panel3";
-            panel3.Size = new Size(601, 219);
+            panel3.Size = new Size(526, 164);
             panel3.TabIndex = 18;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox1.Image = Properties.Resources.avion;
+            pictureBox1.Location = new Point(347, 67);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(151, 96);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 14;
+            pictureBox1.TabStop = false;
             // 
             // panel4
             // 
@@ -262,33 +279,22 @@
             panel4.Controls.Add(label5);
             panel4.Controls.Add(BtnAgregar);
             panel4.Controls.Add(txtPasajeros);
-            panel4.Location = new Point(2, 232);
-            panel4.Margin = new Padding(3, 4, 3, 4);
+            panel4.Location = new Point(2, 174);
             panel4.Name = "panel4";
-            panel4.Size = new Size(377, 289);
+            panel4.Size = new Size(330, 217);
             panel4.TabIndex = 19;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Image = Properties.Resources.avion;
-            pictureBox1.Location = new Point(397, 89);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(172, 127);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 14;
-            pictureBox1.TabStop = false;
             // 
             // FRM_Agregar_Vuelo
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(105, 149, 160);
-            ClientSize = new Size(990, 521);
+            ClientSize = new Size(967, 391);
             Controls.Add(panel3);
             Controls.Add(panel1);
             Controls.Add(panel2);
             Controls.Add(panel4);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FRM_Agregar_Vuelo";
             Text = "FRM";
             panel1.ResumeLayout(false);
@@ -298,9 +304,9 @@
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
