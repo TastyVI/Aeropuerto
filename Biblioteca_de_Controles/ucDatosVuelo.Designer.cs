@@ -185,6 +185,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             Controls.Add(pbpiloto);
             Controls.Add(label2);
             Controls.Add(LblNumerodePasajeros);
