@@ -23,12 +23,10 @@ namespace Aero_Formularios
         //estructura
         private struct RGBColores
         {
-            public static Color color1 = Color.FromArgb(172, 126, 241);
-            public static Color color2 = Color.FromArgb(249, 118, 176);
-            public static Color color3 = Color.FromArgb(253, 138, 114);
-            public static Color color4 = Color.FromArgb(95, 77, 221);
-            public static Color color5 = Color.FromArgb(249, 88, 221);
-            public static Color color6 = Color.FromArgb(249, 88, 155);
+            public static Color color1 = Color.FromArgb(235, 230, 234);
+            public static Color color2 = Color.FromArgb(65, 104, 100);
+            public static Color color3 = Color.FromArgb(160, 198, 206);
+
 
         }
         private void activarBoton(object senderBtn, Color color)
@@ -71,39 +69,31 @@ namespace Aero_Formularios
 
             }
         }
-        public void AbrirFormularioHijo(Form formularioHijo)
+        public void AbrirFormularioHijo(Form nuevoFormularioHijo)
         {
             if (FormularioHijo != null)
             {
                 FormularioHijo.Hide();
+            }
+            FormularioHijo = nuevoFormularioHijo;
 
+            if (!formulariosHijos.Contains(nuevoFormularioHijo))
+            {
+                nuevoFormularioHijo.TopLevel = false;
+                nuevoFormularioHijo.FormBorderStyle = FormBorderStyle.None;
+                nuevoFormularioHijo.Dock = DockStyle.Fill;
+                panelFormularios.Controls.Add(nuevoFormularioHijo);
+                panelFormularios.Tag = nuevoFormularioHijo;
+                formulariosHijos.Add(nuevoFormularioHijo);
             }
-            formularioHijoActual = formularioHijo;
+            nuevoFormularioHijo.BringToFront();
+            nuevoFormularioHijo.Show();
 
-            if (!formulariosHijos.Contains(formularioHijo))
-            {
-                //
-                formularioHijo.TopLevel = false;
-                formularioHijo.FormBorderStyle = FormBorderStyle.None;
-                formularioHijo.Dock = DockStyle.Fill;
-                //
-                panelFormularios.Controls.Add(formularioHijo);
-                panelFormularios.Tag = formularioHijo;
-                formularioHijo.BringToFront();
-                formularioHijo.Show();
-                //lblTituloFormularioHijo.Text = formularioHijo.Text;
-            }
-            else
-            {
-                formularioHijo.BringToFront();
-                formularioHijo.Show();
-            }
-           
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            activarBoton(sender, RGBColores.color5);
+            activarBoton(sender, RGBColores.color1);
             AbrirFormularioHijo(new FRM_Usuarios());
         }
 
@@ -118,11 +108,15 @@ namespace Aero_Formularios
             activarBoton(sender, RGBColores.color3);
             AbrirFormularioHijo(new FRM_Mapa_de_Mexico());
         }
-        
+
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            FormularioHijo.Close();
+            if (FormularioHijo != null)
+            {
+                FormularioHijo.Close();
+                FormularioHijo = null;
+            }
             Reiniciar();
         }
 
@@ -132,7 +126,7 @@ namespace Aero_Formularios
             panelIzquierdo.Visible = false;
             iconoFHijo.IconChar = IconChar.Home;
             iconoFHijo.IconColor = Color.DarkGray;
-           // lblTituloFormularioHijo.Text = "INICIO";
+            // lblTituloFormularioHijo.Text = "INICIO";
         }
         //mueve el formulario a traves de ebento del mause
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -146,6 +140,10 @@ namespace Aero_Formularios
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-       
+       /* private void horaFecha_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToString("hh:mm:ss");
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+        }*/
     }
 }

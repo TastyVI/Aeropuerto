@@ -48,6 +48,7 @@
             panel3 = new Panel();
             pictureBox1 = new PictureBox();
             panel4 = new Panel();
+            pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PBVisualizacion).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbPiloto).BeginInit();
@@ -55,15 +56,17 @@
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(107, 147, 163);
+            panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(PBVisualizacion);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(CmbModeloAvion);
-            panel1.Location = new Point(338, 11);
+            panel1.Location = new Point(422, 24);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(526, 211);
@@ -85,6 +88,7 @@
             label2.BackColor = Color.Transparent;
             label2.FlatStyle = FlatStyle.Popup;
             label2.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(34, 48, 38);
             label2.Location = new Point(198, 1);
             label2.Name = "label2";
             label2.Size = new Size(311, 33);
@@ -112,6 +116,7 @@
             label1.BackColor = Color.Transparent;
             label1.FlatStyle = FlatStyle.Popup;
             label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold);
+            label1.ForeColor = Color.FromArgb(34, 48, 38);
             label1.Location = new Point(3, 1);
             label1.Name = "label1";
             label1.Size = new Size(136, 30);
@@ -139,6 +144,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold);
+            label3.ForeColor = Color.FromArgb(34, 48, 38);
             label3.Location = new Point(3, 36);
             label3.Name = "label3";
             label3.Size = new Size(192, 32);
@@ -205,6 +211,7 @@
             label4.BackColor = Color.Transparent;
             label4.FlatStyle = FlatStyle.Popup;
             label4.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold);
+            label4.ForeColor = Color.FromArgb(34, 48, 38);
             label4.Location = new Point(7, 13);
             label4.Name = "label4";
             label4.Size = new Size(128, 34);
@@ -216,6 +223,7 @@
             label5.BackColor = Color.Transparent;
             label5.FlatStyle = FlatStyle.Popup;
             label5.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold);
+            label5.ForeColor = Color.FromArgb(34, 48, 38);
             label5.Location = new Point(3, 32);
             label5.Name = "label5";
             label5.Size = new Size(327, 34);
@@ -240,31 +248,33 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(107, 147, 163);
+            panel2.BorderStyle = BorderStyle.Fixed3D;
             panel2.Controls.Add(pbPiloto);
             panel2.Controls.Add(lblNombrePiloto);
             panel2.Controls.Add(label4);
-            panel2.Location = new Point(12, 12);
+            panel2.Location = new Point(63, 27);
             panel2.Name = "panel2";
-            panel2.Size = new Size(320, 156);
+            panel2.Size = new Size(320, 171);
             panel2.TabIndex = 17;
             // 
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(107, 147, 163);
+            panel3.BorderStyle = BorderStyle.Fixed3D;
             panel3.Controls.Add(pictureBox1);
             panel3.Controls.Add(label1);
             panel3.Controls.Add(label3);
             panel3.Controls.Add(CmbAeropuertoDestino);
             panel3.Controls.Add(CmbAeropuertoSalida);
-            panel3.Location = new Point(338, 227);
+            panel3.Location = new Point(424, 256);
             panel3.Name = "panel3";
-            panel3.Size = new Size(526, 164);
+            panel3.Size = new Size(526, 179);
             panel3.TabIndex = 18;
             // 
             // pictureBox1
             // 
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Image = Properties.Resources.avion;
+            pictureBox1.Image = Properties.Resources.LogoAvion;
             pictureBox1.Location = new Point(347, 67);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
@@ -276,20 +286,32 @@
             // panel4
             // 
             panel4.BackColor = Color.FromArgb(107, 147, 163);
+            panel4.BorderStyle = BorderStyle.Fixed3D;
             panel4.Controls.Add(label5);
             panel4.Controls.Add(BtnAgregar);
             panel4.Controls.Add(txtPasajeros);
-            panel4.Location = new Point(2, 174);
+            panel4.Location = new Point(55, 204);
             panel4.Name = "panel4";
-            panel4.Size = new Size(330, 217);
+            panel4.Size = new Size(330, 233);
             panel4.TabIndex = 19;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.panel_2;
+            pictureBox2.Location = new Point(954, 12);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(100, 432);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 20;
+            pictureBox2.TabStop = false;
             // 
             // FRM_Agregar_Vuelo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(105, 149, 160);
-            ClientSize = new Size(967, 391);
+            ClientSize = new Size(1057, 441);
+            Controls.Add(pictureBox2);
             Controls.Add(panel3);
             Controls.Add(panel1);
             Controls.Add(panel2);
@@ -307,6 +329,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -331,5 +354,6 @@
         private Panel panel3;
         private Panel panel4;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

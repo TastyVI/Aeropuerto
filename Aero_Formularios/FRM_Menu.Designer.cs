@@ -157,7 +157,7 @@
             BarraTitulo.Dock = DockStyle.Top;
             BarraTitulo.Location = new Point(190, 0);
             BarraTitulo.Name = "BarraTitulo";
-            BarraTitulo.Size = new Size(1094, 55);
+            BarraTitulo.Size = new Size(1114, 55);
             BarraTitulo.TabIndex = 1;
             BarraTitulo.MouseDown += BarraTitulo_MouseDown;
             // 
@@ -187,21 +187,18 @@
             // 
             // panelFormularios
             // 
-            panelFormularios.AutoSize = true;
-            panelFormularios.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            panelFormularios.BackColor = Color.FromArgb(96, 125, 139);
+            panelFormularios.BackColor = SystemColors.ControlDark;
             panelFormularios.Dock = DockStyle.Fill;
             panelFormularios.Location = new Point(190, 55);
-            panelFormularios.MaximumSize = new Size(1003, 487);
             panelFormularios.Name = "panelFormularios";
-            panelFormularios.Size = new Size(1003, 467);
+            panelFormularios.Size = new Size(1114, 467);
             panelFormularios.TabIndex = 2;
             // 
             // FRM_Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1284, 522);
+            ClientSize = new Size(1304, 522);
             Controls.Add(panelFormularios);
             Controls.Add(BarraTitulo);
             Controls.Add(panelMenu);
@@ -216,7 +213,6 @@
             BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconoFHijo).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -229,8 +225,8 @@
         private Panel BarraTitulo;
         private FontAwesome.Sharp.IconPictureBox iconoFormularioHijo;
         private Label lblTituloFormularioHijo;
-        private Panel panelFormularios;
         private FontAwesome.Sharp.IconButton btnAgregar;
         private FontAwesome.Sharp.IconPictureBox iconoFHijo;
+        private Panel panelFormularios;
     }
 }

@@ -118,44 +118,26 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="avion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Boeing 787 Dreamliner" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Boeing 787 Dreamliner.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Boeing 737" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Boeing 737.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MAPA_DE_MEXICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MAPA_DE_MEXICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Embraer E-Jet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Embraer E-Jet.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Boeing 777" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Boeing 777.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LogoAvion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LogoAvion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Bombardier CRJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bombardier CRJ.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Airbus A320" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Airbus A320.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minimisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimisar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CAP _AFEHT_PEREZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CAP _AFEHT_PEREZ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CAP_ANET_CADENA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CAP_ANET_CADENA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAP_JOSE_LUIS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAP_JOSE_LUIS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MAPA_DE_MEXICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MAPA_DE_MEXICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAP_LAZARO_BIBIANO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAP_LAZARO_BIBIANO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CAP_HADRI_DE_LOPEZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CAP_HADRI_DE_LOPEZ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,22 +145,46 @@
   <data name="CAP_JACK_HARRIS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CAP_JACK_HARRIS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CAP_JESUS_BIBIANO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CAP_JESUS_BIBIANO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CAP_JOSE_LUIS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CAP_JOSE_LUIS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Airbus A320" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Airbus A320.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CAP_JUAN_MANUEL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CAP_JUAN_MANUEL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CAP_LAZARO_BIBIANO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CAP_LAZARO_BIBIANO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CAP_VAZILI_ZITZEP" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CAP_VAZILI_ZITZEP.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="minimisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimisar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Boeing 787 Dreamliner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boeing 787 Dreamliner.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAP_JESUS_BIBIANO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAP_JESUS_BIBIANO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Boeing 777" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boeing 777.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoAvion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoAvion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAP _AFEHT_PEREZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAP _AFEHT_PEREZ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="CAP_WILSON _ZALAZAR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CAP_WILSON _ZALAZAR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Embraer E-Jet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Embraer E-Jet.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mundo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panel_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
