@@ -39,13 +39,16 @@
             LblNumerodePasajeros = new Label();
             label5 = new Label();
             label2 = new Label();
+            pbpiloto = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)PbModeloAvion).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbpiloto).BeginInit();
             SuspendLayout();
             // 
             // PbModeloAvion
             // 
             PbModeloAvion.BorderStyle = BorderStyle.FixedSingle;
-            PbModeloAvion.Location = new Point(14, 48);
+            PbModeloAvion.Image = Properties.Resources.avion;
+            PbModeloAvion.Location = new Point(3, 48);
             PbModeloAvion.Name = "PbModeloAvion";
             PbModeloAvion.Size = new Size(148, 117);
             PbModeloAvion.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -65,21 +68,22 @@
             // 
             // label1
             // 
+            label1.AutoSize = true;
             label1.BackColor = SystemColors.ActiveCaption;
-            label1.Font = new Font("PT Bold Dusky", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 178);
-            label1.Location = new Point(180, 37);
+            label1.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Bold);
+            label1.Location = new Point(157, 57);
             label1.Name = "label1";
-            label1.Size = new Size(118, 34);
+            label1.Size = new Size(76, 20);
             label1.TabIndex = 2;
             label1.Text = "CAPITAN";
-            label1.TextAlign = ContentAlignment.BottomLeft;
+            label1.TextAlign = ContentAlignment.BottomCenter;
             // 
             // LblNombreCapitan
             // 
             LblNombreCapitan.AutoSize = true;
             LblNombreCapitan.BackColor = Color.Silver;
             LblNombreCapitan.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LblNombreCapitan.Location = new Point(180, 71);
+            LblNombreCapitan.Location = new Point(157, 91);
             LblNombreCapitan.Name = "LblNombreCapitan";
             LblNombreCapitan.Size = new Size(55, 23);
             LblNombreCapitan.TabIndex = 3;
@@ -90,7 +94,7 @@
             LblAeropuertoDespegue.AutoSize = true;
             LblAeropuertoDespegue.BackColor = Color.Silver;
             LblAeropuertoDespegue.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LblAeropuertoDespegue.Location = new Point(180, 143);
+            LblAeropuertoDespegue.Location = new Point(157, 163);
             LblAeropuertoDespegue.Name = "LblAeropuertoDespegue";
             LblAeropuertoDespegue.Size = new Size(55, 23);
             LblAeropuertoDespegue.TabIndex = 5;
@@ -98,21 +102,22 @@
             // 
             // label3
             // 
+            label3.AutoSize = true;
             label3.BackColor = SystemColors.ActiveCaption;
-            label3.Font = new Font("PT Bold Dusky", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 178);
-            label3.Location = new Point(180, 107);
+            label3.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Bold);
+            label3.Location = new Point(157, 127);
             label3.Name = "label3";
-            label3.Size = new Size(281, 28);
+            label3.Size = new Size(199, 20);
             label3.TabIndex = 4;
             label3.Text = "Aeropuerto de Despegue";
-            label3.TextAlign = ContentAlignment.TopCenter;
+            label3.TextAlign = ContentAlignment.BottomCenter;
             // 
             // LblAeropuertoAterrizaje
             // 
             LblAeropuertoAterrizaje.AutoSize = true;
             LblAeropuertoAterrizaje.BackColor = Color.Silver;
             LblAeropuertoAterrizaje.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LblAeropuertoAterrizaje.Location = new Point(180, 220);
+            LblAeropuertoAterrizaje.Location = new Point(157, 240);
             LblAeropuertoAterrizaje.Name = "LblAeropuertoAterrizaje";
             LblAeropuertoAterrizaje.Size = new Size(55, 23);
             LblAeropuertoAterrizaje.TabIndex = 7;
@@ -120,14 +125,15 @@
             // 
             // label4
             // 
+            label4.AutoSize = true;
             label4.BackColor = SystemColors.ActiveCaption;
-            label4.Font = new Font("PT Bold Arch", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 178);
-            label4.Location = new Point(180, 177);
+            label4.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Bold);
+            label4.Location = new Point(157, 197);
             label4.Name = "label4";
-            label4.Size = new Size(281, 31);
+            label4.Size = new Size(198, 20);
             label4.TabIndex = 6;
             label4.Text = "Aeropuerto de Aterrizaje";
-            label4.TextAlign = ContentAlignment.BottomLeft;
+            label4.TextAlign = ContentAlignment.BottomCenter;
             // 
             // LblNumerodePasajeros
             // 
@@ -155,19 +161,31 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Yellow;
-            label2.Font = new Font("PT Bold Arch", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 178);
+            label2.Font = new Font("Segoe UI Emoji", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ActiveCaptionText;
             label2.Location = new Point(0, 0);
             label2.Name = "label2";
-            label2.Size = new Size(36, 30);
+            label2.Size = new Size(29, 22);
             label2.TabIndex = 10;
             label2.Text = "ID";
             label2.TextAlign = ContentAlignment.BottomLeft;
             // 
-            // UserControl1
+            // pbpiloto
+            // 
+            pbpiloto.BorderStyle = BorderStyle.FixedSingle;
+            pbpiloto.Image = Properties.Resources.avion;
+            pbpiloto.Location = new Point(267, 31);
+            pbpiloto.Name = "pbpiloto";
+            pbpiloto.Size = new Size(98, 93);
+            pbpiloto.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbpiloto.TabIndex = 11;
+            pbpiloto.TabStop = false;
+            // 
+            // ucDatosVuelo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(pbpiloto);
             Controls.Add(label2);
             Controls.Add(LblNumerodePasajeros);
             Controls.Add(label5);
@@ -179,9 +197,10 @@
             Controls.Add(label1);
             Controls.Add(LblModeloAvion);
             Controls.Add(PbModeloAvion);
-            Name = "UserControl1";
-            Size = new Size(464, 268);
+            Name = "ucDatosVuelo";
+            Size = new Size(372, 268);
             ((System.ComponentModel.ISupportInitialize)PbModeloAvion).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbpiloto).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -199,5 +218,6 @@
         private Label LblNumerodePasajeros;
         private Label label5;
         private Label label2;
+        private PictureBox pbpiloto;
     }
 }

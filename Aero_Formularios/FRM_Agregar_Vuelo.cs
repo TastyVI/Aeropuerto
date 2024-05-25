@@ -61,27 +61,29 @@ namespace Aero_Formularios
                         }
                         else
                         {
+                            string cadena = txtPasajeros.Text.ToLower();
+                            string[] remplazar = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ","o","p","q","r","s","t","u","v","w","x","y","z","°" +
+                                            "!",";","#","$","%","&","/","(","=",")","?","¡","¿","+","*","-","@", "'","\"" };
+                            string[] remplazo = { "" };
+                            for (int i = 0; i < remplazar.Length; i++)
+                            {
+                                cadena = cadena.Replace(remplazar[i], remplazo[0]);
+                            }
                             if (CmbAeropuertoDestino.Text == "Aeropuerto de destino")
                             {
                                 MessageBox.Show("no hay Aeropuerto de destino");
                             }
                             else
                             {
-                                if (txtPasajeros.Text == "")
+                                if (txtPasajeros.Text == ""|| cadena=="")
                                 {
                                     MessageBox.Show("no hay pasajeros");
+                                    txtPasajeros.Clear();
                                 }
                                 else
                                 {
-                                    string cadena = txtPasajeros.Text.ToLower();
-                                    string[] remplazar= {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ","o","p","q","r","s","t","u","v","w","x","y","z","°" +
-                                            "!",";","#","$","%","&","/","(","=",")","?","¡","¿","+","*","-","@", "'","\"" };
-                                    string[] remplazo = {""};
-                                    for (int i = 0; i < remplazar.Length; i++)
-                                    {
-                                        cadena = cadena.Replace(remplazar[i], remplazo[0]);
-                                    }
-                                    DatosDelVuelo Datos = new DatosDelVuelo();
+                                    
+                                    
                                     int aux = Convert.ToInt32(cadena);
                                     if (aux==0||aux > 200)
                                     {
@@ -89,7 +91,7 @@ namespace Aero_Formularios
                                     }
                                     else
                                     {
-                                        
+                                        DatosDelVuelo Datos = new DatosDelVuelo();
                                         Datos.Capitan = lblNombrePiloto.Text;
                                         Datos.Modelo = CmbModeloAvion.Text;
                                         Datos.Pasajeros = Convert.ToInt32(aux);

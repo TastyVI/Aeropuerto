@@ -54,10 +54,9 @@
             // PbMapaDeMexico
             // 
             PbMapaDeMexico.Image = Properties.Resources.MAPA_DE_MEXICO;
-            PbMapaDeMexico.Location = new Point(3, 2);
-            PbMapaDeMexico.Margin = new Padding(3, 2, 3, 2);
+            PbMapaDeMexico.Location = new Point(3, 3);
             PbMapaDeMexico.Name = "PbMapaDeMexico";
-            PbMapaDeMexico.Size = new Size(781, 446);
+            PbMapaDeMexico.Size = new Size(893, 595);
             PbMapaDeMexico.SizeMode = PictureBoxSizeMode.StretchImage;
             PbMapaDeMexico.TabIndex = 0;
             PbMapaDeMexico.TabStop = false;
@@ -65,80 +64,72 @@
             // PVAeropuertoPuebla
             // 
             PVAeropuertoPuebla.BackColor = Color.Red;
-            PVAeropuertoPuebla.Location = new Point(488, 326);
-            PVAeropuertoPuebla.Margin = new Padding(3, 2, 3, 2);
+            PVAeropuertoPuebla.Location = new Point(558, 435);
             PVAeropuertoPuebla.Name = "PVAeropuertoPuebla";
-            PVAeropuertoPuebla.Size = new Size(12, 12);
+            PVAeropuertoPuebla.Size = new Size(14, 16);
             PVAeropuertoPuebla.TabIndex = 1;
             PVAeropuertoPuebla.TabStop = false;
             // 
             // PBAeropuertoCDMX
             // 
             PBAeropuertoCDMX.BackColor = Color.Red;
-            PBAeropuertoCDMX.Location = new Point(463, 326);
-            PBAeropuertoCDMX.Margin = new Padding(3, 2, 3, 2);
+            PBAeropuertoCDMX.Location = new Point(529, 435);
             PBAeropuertoCDMX.Name = "PBAeropuertoCDMX";
-            PBAeropuertoCDMX.Size = new Size(12, 12);
+            PBAeropuertoCDMX.Size = new Size(14, 16);
             PBAeropuertoCDMX.TabIndex = 2;
             PBAeropuertoCDMX.TabStop = false;
             // 
             // PBAeropuertoAcapulco
             // 
             PBAeropuertoAcapulco.BackColor = Color.Red;
-            PBAeropuertoAcapulco.Location = new Point(438, 366);
-            PBAeropuertoAcapulco.Margin = new Padding(3, 2, 3, 2);
+            PBAeropuertoAcapulco.Location = new Point(501, 488);
             PBAeropuertoAcapulco.Name = "PBAeropuertoAcapulco";
-            PBAeropuertoAcapulco.Size = new Size(12, 12);
+            PBAeropuertoAcapulco.Size = new Size(14, 16);
             PBAeropuertoAcapulco.TabIndex = 3;
             PBAeropuertoAcapulco.TabStop = false;
             // 
             // PBAeropuertoTijuana
             // 
             PBAeropuertoTijuana.BackColor = Color.Red;
-            PBAeropuertoTijuana.Location = new Point(50, 23);
-            PBAeropuertoTijuana.Margin = new Padding(3, 2, 3, 2);
+            PBAeropuertoTijuana.Location = new Point(57, 31);
             PBAeropuertoTijuana.Name = "PBAeropuertoTijuana";
-            PBAeropuertoTijuana.Size = new Size(12, 12);
+            PBAeropuertoTijuana.Size = new Size(14, 16);
             PBAeropuertoTijuana.TabIndex = 4;
             PBAeropuertoTijuana.TabStop = false;
             // 
             // PBAeropuertoMonterrey
             // 
             PBAeropuertoMonterrey.BackColor = Color.Red;
-            PBAeropuertoMonterrey.Location = new Point(438, 174);
-            PBAeropuertoMonterrey.Margin = new Padding(3, 2, 3, 2);
+            PBAeropuertoMonterrey.Location = new Point(501, 232);
             PBAeropuertoMonterrey.Name = "PBAeropuertoMonterrey";
-            PBAeropuertoMonterrey.Size = new Size(12, 12);
+            PBAeropuertoMonterrey.Size = new Size(14, 16);
             PBAeropuertoMonterrey.TabIndex = 5;
             PBAeropuertoMonterrey.TabStop = false;
             // 
             // PBAeropuertoChihuahua
             // 
             PBAeropuertoChihuahua.BackColor = Color.Red;
-            PBAeropuertoChihuahua.Location = new Point(288, 116);
-            PBAeropuertoChihuahua.Margin = new Padding(3, 2, 3, 2);
+            PBAeropuertoChihuahua.Location = new Point(329, 155);
             PBAeropuertoChihuahua.Name = "PBAeropuertoChihuahua";
-            PBAeropuertoChihuahua.Size = new Size(13, 10);
+            PBAeropuertoChihuahua.Size = new Size(15, 13);
             PBAeropuertoChihuahua.TabIndex = 6;
             PBAeropuertoChihuahua.TabStop = false;
             // 
             // PbAeropuertoCancun
             // 
             PbAeropuertoCancun.BackColor = Color.Red;
-            PbAeropuertoCancun.Location = new Point(758, 284);
-            PbAeropuertoCancun.Margin = new Padding(3, 2, 3, 2);
+            PbAeropuertoCancun.Location = new Point(866, 379);
             PbAeropuertoCancun.Name = "PbAeropuertoCancun";
-            PbAeropuertoCancun.Size = new Size(12, 12);
+            PbAeropuertoCancun.Size = new Size(14, 16);
             PbAeropuertoCancun.TabIndex = 7;
             PbAeropuertoCancun.TabStop = false;
             // 
             // PBAeropuertoMerida
             // 
             PBAeropuertoMerida.BackColor = Color.Red;
-            PBAeropuertoMerida.Location = new Point(694, 284);
-            PBAeropuertoMerida.Margin = new Padding(3, 2, 3, 2);
+            PBAeropuertoMerida.Location = new Point(793, 379);
             PBAeropuertoMerida.Name = "PBAeropuertoMerida";
-            PBAeropuertoMerida.Size = new Size(12, 12);
+            PBAeropuertoMerida.Size = new Size(14, 16);
             PBAeropuertoMerida.TabIndex = 8;
             PBAeropuertoMerida.TabStop = false;
             // 
@@ -146,28 +137,26 @@
             // 
             FlwContenedorControles.BorderStyle = BorderStyle.FixedSingle;
             FlwContenedorControles.Dock = DockStyle.Right;
-            FlwContenedorControles.Location = new Point(799, 0);
-            FlwContenedorControles.Margin = new Padding(3, 2, 3, 2);
+            FlwContenedorControles.Location = new Point(902, 0);
             FlwContenedorControles.Name = "FlwContenedorControles";
-            FlwContenedorControles.Size = new Size(188, 448);
+            FlwContenedorControles.Size = new Size(404, 583);
             FlwContenedorControles.TabIndex = 9;
             // 
             // PbAeropuertoGuadalajara
             // 
             PbAeropuertoGuadalajara.BackColor = Color.Red;
-            PbAeropuertoGuadalajara.Location = new Point(359, 290);
-            PbAeropuertoGuadalajara.Margin = new Padding(3, 2, 3, 2);
+            PbAeropuertoGuadalajara.Location = new Point(410, 387);
             PbAeropuertoGuadalajara.Name = "PbAeropuertoGuadalajara";
-            PbAeropuertoGuadalajara.Size = new Size(12, 12);
+            PbAeropuertoGuadalajara.Size = new Size(14, 16);
             PbAeropuertoGuadalajara.TabIndex = 10;
             PbAeropuertoGuadalajara.TabStop = false;
             // 
             // FRM_Mapa_de_Mexico
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(105, 149, 160);
-            ClientSize = new Size(987, 448);
+            ClientSize = new Size(1306, 583);
             Controls.Add(PbAeropuertoGuadalajara);
             Controls.Add(FlwContenedorControles);
             Controls.Add(PBAeropuertoMerida);
@@ -179,9 +168,8 @@
             Controls.Add(PBAeropuertoCDMX);
             Controls.Add(PVAeropuertoPuebla);
             Controls.Add(PbMapaDeMexico);
-            Margin = new Padding(3, 2, 3, 2);
-            MaximumSize = new Size(1003, 487);
-            MinimumSize = new Size(1003, 487);
+            MaximumSize = new Size(1324, 630);
+            MinimumSize = new Size(1324, 630);
             Name = "FRM_Mapa_de_Mexico";
             Text = "Mapa_de_Mexico";
             ((System.ComponentModel.ISupportInitialize)PbMapaDeMexico).EndInit();

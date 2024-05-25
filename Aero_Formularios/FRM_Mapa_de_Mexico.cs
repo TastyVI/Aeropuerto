@@ -167,14 +167,15 @@ namespace Aero_Formularios
 
         public void mostarControles()
         {
-            ucDatosVuelo ControlesVuelo = new ucDatosVuelo();
+            
             List<DatosDelVuelo> Lista = Vuelos_datos.Find(p => true).ToList();
             foreach (DatosDelVuelo d in Lista)
-            {
+            {ucDatosVuelo ControlesVuelo = new ucDatosVuelo();
                 ControlesVuelo.datosDelVuelo = d;
                 ControlesVuelo.Informacion();
+             FlwContenedorControles.Controls.Add(ControlesVuelo);
             }
-            FlwContenedorControles.Controls.Add(ControlesVuelo);
+           
 
         }
 
