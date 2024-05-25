@@ -75,17 +75,17 @@ namespace Aero_Formularios
                             }
                             else
                             {
-                                if (txtPasajeros.Text == ""|| cadena=="")
+                                if (txtPasajeros.Text == "" || cadena == "")
                                 {
                                     MessageBox.Show("no hay pasajeros");
                                     txtPasajeros.Clear();
                                 }
                                 else
                                 {
-                                    
-                                    
+
+
                                     int aux = Convert.ToInt32(cadena);
-                                    if (aux==0||aux > 200)
+                                    if (aux == 0 || aux > 200)
                                     {
                                         MessageBox.Show("el Avion puede transportar 1~200 pasajeros");
                                         txtPasajeros.Clear();
@@ -127,7 +127,7 @@ namespace Aero_Formularios
         {
             int numero;
             Random rand = new Random();
-           numero = (int)rand.Next(0, 9);
+            numero = (int)rand.Next(0, 9);
             switch (numero)
             {
                 case 1:
@@ -172,7 +172,7 @@ namespace Aero_Formularios
                     break;
             }
         }
-        
+
         private void Cronometro_Tick(object sender, EventArgs e)
         {
             string MODELO = CmbModeloAvion.Text;
@@ -182,7 +182,7 @@ namespace Aero_Formularios
                     PBVisualizacion.Image = Properties.Resources.Boeing_737;
                     break;
                 case "Airbus A320":
-                    PBVisualizacion.Image =Properties.Resources.Airbus_A320;
+                    PBVisualizacion.Image = Properties.Resources.Airbus_A320;
                     break;
                 case "Embraer E-jet":
                     PBVisualizacion.Image = Properties.Resources.Embraer_E_Jet;
@@ -205,8 +205,13 @@ namespace Aero_Formularios
             CmbModeloAvion.Text = "Modelo";
             AsignacionCapitan();
             txtPasajeros.Text = "";
-            CmbAeropuertoSalida.Text= "Aeropuerto de inicio";
-            CmbAeropuertoDestino.Text= "Aeropuerto de destino";
+            CmbAeropuertoSalida.Text = "Aeropuerto de inicio";
+            CmbAeropuertoDestino.Text = "Aeropuerto de destino";
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

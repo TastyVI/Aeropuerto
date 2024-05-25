@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Aero_Formularios
 {
@@ -14,6 +18,8 @@ namespace Aero_Formularios
     {
         public FRM_Inicio_Sesion()
         {
+           
+
             InitializeComponent();
         }
 
@@ -68,12 +74,32 @@ namespace Aero_Formularios
 
         private void FRM_Inicio_Sesion_Load(object sender, EventArgs e)
         {
-
         }
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-            //
+            string connectionString = "mongodb://localhost:27017";
+            var client = new MongoClient(connectionString);
+            var database = client.GetDatabase("Aeropuerto");
+            var collection = database.GetCollection<BsonDocument>("Usuarios");
+            string usuario=txtUsuario.Text;
+            string contrasena=txtContraseña.Text;
+            var filter = Builders<BsonDocument>.Filter.Eq("Nombre", usuario) & Builders<BsonDocument>.Filter.Eq("Contrasena", contrasena);
+            var user = collection.Find(filter).FirstOrDefault();
+
+            
+
+            if (user != null)
+            {
+                this.Hide(); // Esconde el formulario de inicio de sesión
+                FRM_Menu fRM_Menu = new FRM_Menu(); // Crea una instancia del nuevo formulario
+                fRM_Menu.Show(); // Muestra el nuevo formulario
+            }
+        
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos.");
+            }
         }
     }
 }
